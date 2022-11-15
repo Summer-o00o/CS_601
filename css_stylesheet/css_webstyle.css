@@ -1,0 +1,862 @@
+* {
+    margin: 1%;
+    box-sizing: border-box;
+    /*border-style: solid;*/
+    border-color: darkgray;
+}
+
+@font-face {
+    font-family: "EXO_1";
+    src: url("../css_stylesheet/font_sanserif/Exo1/Exo-VariableFont_wght.ttf");
+}
+
+
+body {
+    padding: 20px;
+    font-family: EXO_1, Optima, 'Trebuchet MS', sans-serif;
+    color: rgba(51, 57, 57, 0.875);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1150px;
+    min-width: 400px;
+    width: 1150px;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: "flycatcher";
+    src: url("../css_stylesheet/font_sanserif/flycatcher-font-2022-02-08-22-29-10-utc/Flycatcher\ Grunge.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: flycatcher, Chalkduster, "Marker Felt", Trattatello, fantasy;
+    word-spacing: 0.15rem;
+    color: #416351;
+}
+
+h1,
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+
+@font-face {
+    font-family: head_style;
+    src: url("./font_sanserif/meloday-2022-10-31-15-23-54-utc/ttf.ttf");
+}
+
+p {
+    line-height: 1.4rem;
+    text-indent: 1rem;
+    padding: 0.5rem;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: dimgray;
+    font-size: 0.7rem;
+}
+
+
+nav {
+    padding: 0.3rem;
+    margin: 0;
+    height: 1.8rem;
+    background-color: floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>span,
+nav>a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#home_head {
+    font-family: head_style, Chalkduster, fantasy;
+    font-size: 3rem;
+    background-image: url("./image/index_header.jpg");
+    background-size: cover;
+    color: snow;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    text-indent: 2rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+
+#narrow-nav div {
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: grey;
+    margin: 0.15rem 0;
+}
+
+#narrow-nav {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    nav {
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: auto;
+    }
+
+    nav>a,
+    nav>span {
+        margin: 0;
+        padding: 0.2rem;
+    }
+
+    #home_head {
+        font-size: 1.8rem;
+        color: darkolivegreen;
+    }
+}
+
+@media (max-width: 650px) {
+
+    nav {
+        display: none;
+    }
+
+    #narrow-nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home_head {
+        font-size: 1.2rem;
+        color: darkslategrey;
+    }
+}
+
+/* start for index page */
+
+#welcome {
+    color: rosybrown;
+    padding: 0;
+    margin: 0.5rem 0.5rem;
+    text-align: center;
+}
+
+#welcome~p {
+    margin: 0 1.5rem;
+    padding: 0.6rem;
+    color: gray;
+}
+
+#welcome+p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.home_nav {
+    font-family: Chalkduster, head_style, "Marker Felt", fantasy;
+    font-size: 1.1rem;
+}
+
+a:link {
+    color: rgb(113, 159, 113);
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgoldenrod
+}
+
+nav span {
+    color: lightcoral
+}
+
+#portrait {
+    max-width: 35vw;
+    height: auto;
+    display: flex;
+    margin: 4rem 1rem;
+    border-radius: 4em 8em 4em 8em / 8em 4em 8em 4em;
+    -moz-border-radius: 4em 8em 4em 8em / 8em 4em 8em 4em;
+    -webkit-border-radius: 4em 8em 4em 8em / 8em 4em 8em 4em;
+}
+
+#index_main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+#index_article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 1rem;
+}
+
+@media (max-width: 1000px) {
+    #index_main {
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+/* this is the end of index page */
+
+/*this is the start of hometown page*/
+
+/* split <main> into 2 columns */
+#main_container {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* put <aside> to column1, main in column 2 and back to top button to column 3*/
+#hometown_nav {
+    grid-area: 1/1/12/1;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgba(211, 211, 211, 0.498);
+}
+
+#hometown_main {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* add back to top button*/
+#backtotop, #backtotop-narrow {
+    grid-column: 3;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 100px;
+    place-self: end;
+    position: sticky;
+    bottom: 20px;
+    margin-top: 100vh;
+    --offset: 100px;
+    margin-top: calc(100vh + var(--offset));
+    white-space: nowrap;
+}
+#backtotop-narrow {
+    display: none;
+}
+#hometown_main h2 {
+    text-align: center;
+}
+
+/* animation of the h2*/
+#wavy_head span {
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    60% {
+        transform: rotateY(360deg)
+    }
+}
+
+#hometown_main figure {
+    margin: 1%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#hometown_main figcaption {
+    margin-top: 0;
+}
+
+#hometown_img {
+    margin-bottom: 0;
+    max-width: 50vw;
+    height: auto;
+}
+
+#hometown_building {
+    max-width: 30vw;
+    height: auto;
+}
+
+#hometown_main h3 {
+    font-size: 2.5rem;
+    padding: 0.2em;
+    margin: 0 1em;
+    margin-top: 0.5rem;
+}
+
+#hometown_main h4 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#hometown_main p {
+    margin: 0.2rem 0.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
+
+.iframe {
+    text-align: center;
+}
+
+iframe {
+    max-width: 50vw;
+    height: 50vh;
+}
+
+/*column 1 setting*/
+
+
+#hometown_nav h5 {
+    font-size: 2.5rem;
+    color: rgb(228, 169, 21);
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#hometown_nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hometown_nav li {
+    margin: 1rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+#hometown_nav a:link {
+    color: darkolivegreen;
+    font-family: EXO_1, "Marker Felt", Trattatello, fantasy;
+    text-decoration: underline;
+}
+
+#hometown_nav a:hover {
+    color: lightcoral;
+}
+
+#hometown_nav a:visited {
+    color: rgb(113, 159, 113);
+}
+
+#culture h4 {
+    text-indent: 5%;
+    padding: 0.3rem
+}
+
+@media (max-width: 1000px) {
+    #hometown_nav h5 {
+        font-size: 1.5rem;
+    }
+
+    #wavy_head span {
+        font-size: 2.5rem;
+    }
+
+    #hometown_nav a:link {
+        font-size: 0.8rem;
+    }
+
+    #hometown_main h3 {
+        font-size: 1.8rem;
+    }
+
+    #backtotop {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #wavy_head span {
+        font-size: 2rem;
+    }
+
+    #backtotop {
+        display: none;
+    }
+    #backtotop-narrow {
+        display: flex;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* This is the end of hometown page*/
+
+/* This is the start of furryfriends page */
+
+
+#furryfriends {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#h3-puss,
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+}
+
+/*puss photo slide show*/
+#puss-photo-container {
+    float: left;
+    margin-top: 1rem;
+    ;
+    padding-right: 0.5rem;
+    width: 350px;
+    height: 270px;
+    background-image: url(../FurryFriends/image/puss1_400x300.jpg);
+    -webkit-animation: slide 20s ease-in-out infinite;
+    animation: slide 20s ease-in-out infinite;
+    -moz-animation: slide 20s ease-in-out infinite;
+}
+
+@keyframes slide {
+    12% {
+        background-image: url(../FurryFriends/image/puss1_400x300.jpg);
+    }
+
+    25% {
+        background-image: url(../FurryFriends/image/puss2_400x300.jpg);
+    }
+
+    37% {
+        background-image: url(../FurryFriends/image/puss3_400x300.jpg);
+    }
+
+    50% {
+        background-image: url(../FurryFriends/image/puss4_400x300.jpg);
+    }
+
+    62% {
+        background-image: url(../FurryFriends/image/puss5_400x300.jpg);
+    }
+
+    75% {
+        background-image: url(../FurryFriends/image/puss6_400x300.jpg);
+    }
+
+    87% {
+        background-image: url(../FurryFriends/image/puss_400x300.jpg);
+    }
+
+    100% {
+        background-image: url(../FurryFriends/image/puss8_400x300.jpg);
+    }
+}
+
+/*end of puss photo slide show*/
+
+#puss-video {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#puss-video video {
+    width: 50vw;
+    height: auto;
+    min-width: 350px;
+    box-shadow: 4px 4px 6px 8px rgba(66, 64, 64, 0.498);
+}
+
+#amber-photo {
+    text-align: center;
+}
+
+#amber-photo img {
+    width: 35vw;
+    height: auto;
+    min-width: 380px;
+}
+
+#amber-photo figcaption {
+    margin-top: 0;
+}
+
+@media (max-width: 1000px) {
+    #puss-article {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+/*end of furryfriends page */
+
+/*start of hobby page*/
+#hobby-main {
+    margin-top: 3rem;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    gap: 6rem;
+    margin: 2rem;
+}
+
+.hobby-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.hobby h2 {
+    height: fit-content;
+    width: 18rem;
+    background-color: darkgrey;
+    color: white;
+}
+
+.hobby h2:hover {
+    background-color: antiquewhite;
+    color: darkgray;
+}
+
+.hobby figure {
+    width: 24vw;
+    box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, 0.7);
+}
+
+.hobby img {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.hobby a {
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .hobby {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 0;
+        margin: 1rem;
+    }
+
+    .hobby figure {
+        min-width: 250px;
+        height: auto;
+    }
+
+    .hobby h2 {
+        height: fit-content;
+        width: 15rem;
+        font-size: 2rem;
+        background-color: darkgrey;
+        color: white;
+    }
+}
+
+/* end of hobby page*/
+
+/*start of travel page*/
+#travel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#travel h2 {
+    margin: 1.5rem 4rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#travel-photo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.travel-photos {
+    width: 26vw;
+    height: auto;
+    min-width: 250px;
+    max-width: 330px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.travel-photos img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+.hobby a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.hobby a:visited {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1000px) {
+    #travel h2 {
+        margin: 1.5rem 4rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+/*end of travel page*/
+
+/*start of photography page*/
+#photographying {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#photographying h2 {
+    margin: 1.5rem 4rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#photography-container1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.3rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+    padding-bottom: 0;
+}
+
+#photography-container2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+#photography-container3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.3rem;
+    margin-top: 0;
+    margin-bottom: 6rem;
+    padding-top: 0;
+}
+
+.photography {
+    max-width: 13vw;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+#photography-container2 figure {
+    max-width: 15vw;
+}
+
+
+.photography img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    transition: transform .5s;
+    margin: 0;
+}
+
+.photography img:hover {
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+}
+
+@media (max-width: 1000px) {
+    #photographying h2 {
+        margin: 1.5rem 4rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* end of hobby page*/
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#experience h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#experience figure {
+    text-align: center;
+}
+
+#experience img {
+    width: 40vw;
+    height: auto;
+    min-width: 200px;
+    margin-bottom: 0;
+}
+
+#experience figcaption {
+    margin-top: 0;
+}
+
+#experience p {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#experience ol {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    list-style: outside lower-roman;
+}
+
+#experience li {
+    margin: 1rem 1rem 0 0;
+}
+
+table {
+    width: fit-content;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    border-top: 1px solid lightgray;
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
+
+tr.even {
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color: cornsilk;
+}
+
+#foot {
+    text-align: right;
+    border-bottom: 2px solid lightgray;
+}
+
+td,
+th {
+    padding: 0.3rem 0.5rem;
+}
+
+/* end of experience page*/
+
+/* start of contact page*/
+#contact-main {
+    background: url(../Contact/image/contact-background2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    width: fit-content;
+    height: auto;
+    margin-top: 10rem;
+    margin-left: 5rem;
+}

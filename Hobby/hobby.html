@@ -7,63 +7,69 @@
         <meta name="author" content="Luyao Wang">
         <meta name="description" 
         content="I like travelling, expecially hiking, camping, I also like playing piano, listenning to music, sometimes doing some handwork ">
+        <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
+        <div class="container">
         <header>
+            <h1 id="home_head">
+                Luyao's Sweet Home o_0
+            </h1>
             <nav>
-                <a href="../Index/index.html">Home</a> |
-                <a href="../Hometown/hometown.html">Hometown</a> |
-                <a href="../FurryFriends/furryfriends.html">Furry Friends</a> |
-                <span>Hobby</span> |
-                <a href="../Experience/experience.html">Experience</a> |
+                <a class="home_nav" href="../Index/index.html">Home</a> 
+                <a href="../Hometown/hometown.html">Hometown</a> 
+                <a href="../FurryFriends/furryfriends.html">Furry Friends</a> 
+                <span>Hobby</span> 
+                <a href="../Experience/experience.html">Experience</a> 
                 <a href="../Contact/contact.html">Contact</a>
             </nav>
+
+            <nav id="narrow-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </nav>
         </header>
-        <hr>
-        <main>
-            <section>
-                <h2>Hiking</h2>
-                <p>
-                    I like travelling a lot, especially hiking! It gives me a chance to have a connection with our nature.
-                </p>
+        <main id="hobby-main">
+            <section class="hobby">
+                <h2><a href="./travel/travel.html">Traveling</a></h2>
+
                 <figure>
-                    <img src="image/hikihng_in_Hawi_400x300.jpg" alt="hiking in Hawii" width="400" height="300">
-                    <img src="image/hiking_Glacier_National_park_400x300.jpg" alt="hiking in Glacier National Park" width="400" height="300">
-                    <img src="image/hilking_in_Colorado_400x300.jpg" alt="hiking in Colorado" width="400" height="300">
-                    <img src="image/death_velly_400x300.jpg" alt="hiking in Death Valley" width="400" height="300">
-                    <figcaption>Hiking in Hawii, Glacier National Park, Colorado and Death Valley</figcaption>
+                    <img src="./travel/image/travel-photo_600x450.jpg" alt="travel-poster">
                 </figure>
             </section>
-            <hr>
+            
 
-            <section>
-                <h2>Photographing</h2>
-                <p>
-                    Photographing helps me to record and remember importment moment or those beutiful scenery during travelling or in the life.
-                </p>
+            <section class="hobby hobby-row-reverse" >
+                <h2><a href="./photography/photography.html">Photography</a> </h2>
+
                 <figure>
-                    <img src="image/photography_in_houston_600x450.jpg" alt="water lights" width="600" height="450">
-                    <img src="image/photography_yellow_stone_600x450.jpg" alt="yellow stone" width="600" height="450">
-                    <img src="image/photography_Glacier_National_Park_600x450.jpg" alt="Glacier National Park" width="600" height="450">
-                    <img src="image/photography_600x450.jpg" alt="farm" width="600" height="450">
-                
-                    <figcaption>Photographing during travelling</figcaption>
+                    <img src="./photography/image/photography-poster_1_600x450.jpg" alt="photo-graphy-poster">
                 </figure>
             </section>
-            <hr>
-
-            <section>
-                <h2>Shrimps</h2>
-                <p>
-                    About two years ago, I started to become interested in keeping shrimps, especially <a href="https://en.wikipedia.org/wiki/Neocaridina_davidi" target="_blank"><i>Neocaridina davidi</i></a>. Sometime it is so interesting to watch those small things to swim around.
-                </p>
-                <video poster="video/shrimp.jpeg" width="500" height="400" controls preload="auto">
-                    <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video.webm" type="video/webm">
-                </video>
+            
+        <!-- TODO: will add back later
+            <section class="hobby">
+                <h2>Music</h2>
+                <figure>
+                    <img src="./music/image/music_600x450.jpg" alt="music-poster">
+                </figure>
             </section>
-            <hr>
+
+
+            <section class="hobby hobby-row-reverse">
+                <h2>Others</h2>
+                <figure>
+                    <img src="./others/other-hobby_poster_600x450.jpg" alt="poster">
+                </figure>
+            </section>
+
+            <video poster="video/shrimp.jpeg" width="500" height="400" controls preload="auto">
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.webm" type="video/webm">
+            </video>
+
 
             <section>
                 <h2>Handicrafts</h2>
@@ -74,13 +80,14 @@
                     Check <a href="https://www.etsy.com/shop/LittleSummerTime?ref=seller-platform-mcnav" target="_blank">here </a> to see my handicrafts!
                 </p>
             </section>
-
+        -->
         </main>
         <footer>
             <p>
                 Copyright &copy; 2022 Luyao Wang. All Rrights Reserved.
             </p>
         </footer>
+        </div>    
     </body>
 
 </html>
