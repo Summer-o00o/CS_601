@@ -8,95 +8,127 @@
     <meta name="author" content="Luyao Wang">
     <meta name="description" content="My cat Puss and dog Amber">
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
+    <script src="../jsfile/clock.js" defer></script>
+    <script src="../jsfile/guessGame.js" defer></script>
+    <script src="../jsfile/hangberger.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-    <header>
-        <h1 id="home_head">
-            Luyao's Sweet Home o_0
-        </h1>
-        <nav>
-            <a class="home_nav" href="../Index/index.html">Home</a> 
-            <a href="../Hometown/hometown.html">Hometown</a> 
-            <span>Furry Friends</span> 
-            <a href="../Hobby/hobby.html">Hobby</a> 
-            <a href="../Experience/experience.html">Experience</a> 
-            <a href="../Contact/contact.html">Contact</a>
-        </nav>
+        <header>
+            <h1 id="home_head">
+                Luyao's Sweet Home o_0
+                <div id="clock"></div>
+            </h1>
 
-        <nav id="narrow-nav">
-            <div></div>
-            <div></div>
-            <div></div>
-        </nav>
-    </header>
-    <main id="furryfriends">
-        <h2 id="h2">
-            My cutiest friends Puss and Amber <span>&#128151;</span>
-        </h2>
+                <nav id="narrow-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </nav>
+                
+                <nav class="nav">
+                    <a class="home_nav" href="../Index/index.html">Home</a>
+                    <a href="../Hometown/hometown.html">Hometown</a>
+                    <span>Furry Friends</span>
+                    <a href="../Hobby/hobby.html">Hobby</a>
+                    <a href="../Experience/experience.html">Experience</a>
+                    <a href="../Contact/contact.html">Contact</a>
+                </nav>
 
-        <h3 id="h3-puss">Puss</h3>
+
+        </header>
+        <main id="furryfriends">
+            <h2>
+                My cutiest friends Puss and Amber <span>&#128151;</span>
+            </h2>
+
+            <h3 class="titles">Puss</h3>
             <article id="puss-article">
-            <div id="puss-photo-container">
+                <div id="puss-photo-container"></div>
 
-                
-            </div>
-            
-            <p class="puss-p">
-                My cat Puss, a <a href="https://en.wikipedia.org/wiki/British_Shorthair" target="_blank">British
-                    Shorthair</a> cat, is 4 and half years old already. He likes to sit in the sunshine to clean his
-                hair, or sitting in the cat tree to take a look of people and cars outsisde of the window. Every morning, he will jump on the bed and come to us purring.
-            </p>
-            <p class="puss-p">
-                When he was young, the vet highly suspecious him having <a href="https://en.wikipedia.org/wiki/Feline_infectious_peritonitis">Feline infectious peritonitis</a>, which is a heartbreaking disease and usually strikes kittens and is almost always fatal. Except in rare cases, wet <abbr title="Feline infectious peritonitis">FIP</abbr> is fatal within about five weeks of diagnosis. The dry form is equally deadly but affected cats may survive for a few months. Me and my husband took him to several doctors and did many examinations. There is no drug to treat <abbr title="Feline infectious peritonitis">FIP</abbr>, so the vet can only treat symptoms. It was like a miracle that he finally recovered. But he was timid and doesn't like most stangers or too many environmental changes from that time. But for me, he is and will always be the cutest guy in the world! 
-            </p>
-            <p class="puss-p">
-                These days he has reached 14 pounds and sometimes he cannot "brake" when he is playing games. Both me and the vet think he needs to lose some
-                weight<span>&#128580;</span>.
-            </p>
-        </article>    
-                
-            <div id="puss-video">  
+                <p class="puss-p">
+                    My cat Puss, a <a href="https://en.wikipedia.org/wiki/British_Shorthair" target="_blank">British
+                        Shorthair</a> cat, is 4 and half years old already. He likes to sit in the sunshine to clean his
+                    hair, or sitting in the cat tree to take a look of people and cars outsisde of the window. Every
+                    morning, he will jump on the bed and come to us purring.
+                </p>
+                <p class="puss-p">
+                    When he was young, the vet highly suspecious him having <a
+                        href="https://en.wikipedia.org/wiki/Feline_infectious_peritonitis">Feline infectious
+                        peritonitis</a>, which is a heartbreaking disease and usually strikes kittens and is almost
+                    always fatal. Except in rare cases, wet <abbr title="Feline infectious peritonitis">FIP</abbr> is
+                    fatal within about five weeks of diagnosis. The dry form is equally deadly but affected cats may
+                    survive for a few months. Me and my husband took him to several doctors and did many examinations.
+                    There is no drug to treat <abbr title="Feline infectious peritonitis">FIP</abbr>, so the vet can
+                    only treat symptoms. It was like a miracle that he finally recovered. But he was timid and doesn't
+                    like most stangers or too many environmental changes from that time. But for me, he is and will
+                    always be the cutest guy in the world!
+                </p>
+                <p class="puss-p">
+                    These days he has reached 14 pounds and sometimes he cannot "brake" when he is playing games. Both
+                    me and the vet think he needs to lose some
+                    weight<span>&#128580;</span>.
+                </p>
+            </article>
+
+            <div id="puss-video">
                 <p>
                     <b>Check this funny video of PUSS!</b>
-                </p>  
-                
+                </p>
+
                 <video poster="image/puss-poster-649x368.jpg" width="649" height="368" preload="auto" controls>
                     <source src="video/video.mp4" type="video/mp4">
                     <source src="video/video.webm" type="video/webm">
                     <p>Puss is playing chasing games</p>
-                </video>   
+                </video>
             </div>
 
-        
-        <hr>
-        <section>
-            <h2>Amber</h2>
-            <figure id="amber-photo">
-                <img src="image/Amber_400x300.jpg" width="400" height="300" alt="a photo of Amber">
-                <img src="image/Amber_2JPG_400x300.jpg" width="400" height="300" alt="Amber tries to be cute">
-                <figcaption>Amber tries to look small and cute </figcaption>
-            </figure>
-            <p>
-                Amber is a new member of our family a few months ago! She is a standard sized <a href="https://en.wikipedia.org/wiki/Goldendoodle" target="_blank">GoldenDoodle</a> with cream wavy hair. She is only 6 months, still a puppy, and is <strong>REALLY</strong> energetic! 
-            </p>
-            <p>
-                The most difficult part for me is to introduce Amber and Puss to each other. Amber always wants to play and Puss always feels scared and wants to hide because of the difference in their sizes and weight. To solve this issue, I even took an online class about training dogs.
-            </p>
-            <p>
-                Is Amber cute? Does she look small? Don't be fooled by this photo since she has already been 46 pounds!
-                <span>&#128561;</span><br>
-                
-            </p>
-        </section>
 
-    </main>
-    <footer>
-        <p>
-            Copyright &copy; 2022 Luyao Wang. All Rrights Reserved.
-        </p>
-    </footer>
+            <hr>
+            <article id="amber-article">
+                <h3 class="titles">Amber</h3>
+                <p>
+                    Amber is a new member of our family a few months ago! She is a standard sized <a
+                        href="https://en.wikipedia.org/wiki/Goldendoodle" target="_blank">GoldenDoodle</a> with cream
+                    wavy hair. She is only 6 months, still a puppy, and is <strong>REALLY</strong> energetic!
+                </p>
+                <p>
+                    The most difficult part for me is to introduce Amber and Puss to each other. Amber always wants to
+                    play and Puss always feels scared and wants to hide because of the difference in their sizes and
+                    weight. To solve this issue, I even took an online class about training dogs.
+                </p>
+                <p id="if-game">
+                    Want to play a game to find Amber?
+                </p>
+                <div id="buttons">
+                    <input type="button" name="yes_button" id="yes-button" value="Let's play!">
+                    <input type="button" name="no_button" id="no-button" value="No thanks!">
+                </div>
+                <p id="game-instruction" class="hide">
+                    Just click the photo to see if this is Amber.
+                </p>
+                <figure id="amber-photo">
+                    <img class="photoGuess hide" id="1" width="400" height="300" alt="a photo of dog">
+                    <img class="photoGuess hide" id="2" width="400" height="300" alt="a photo of dog">
+                    <img class="photoGuess hide" id="3" width="400" height="300" alt="a photo of dog">
+                    <img class="photoGuess hide" id="4" width="400" height="300" alt="a photo of dog">
+                    <figcaption class="hide" id="figcaption">Who is Amber?</figcaption>
+                </figure>
+
+                <p id='cute-Amber' class="hide">
+                    Is Amber cute? Does she look small? Don't be fooled by this photo since she is almost 50 pounds!
+                    <span>&#128561;</span><br>
+
+                </p>
+            </article>
+
+        </main>
+        <footer>
+            <p>
+                Copyright &copy; 2022 Luyao Wang. All Rrights Reserved.
+            </p>
+        </footer>
     </div>
 </body>
 

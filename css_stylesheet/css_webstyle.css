@@ -1,10 +1,15 @@
 * {
-    margin: 1%;
     box-sizing: border-box;
     /*border-style: solid;*/
     border-color: darkgray;
 }
-
+hr {
+    border: 0;
+    width: 96%;     
+    margin-top: 1rem;          
+    background-color:lightgrey;
+    height: 2px;
+  }
 @font-face {
     font-family: "EXO_1";
     src: url("../css_stylesheet/font_sanserif/Exo1/Exo-VariableFont_wght.ttf");
@@ -21,6 +26,7 @@ body {
 }
 
 .container {
+    margin-top: 2rem;
     width: 95%;
     max-width: 1150px;
     min-width: 400px;
@@ -48,7 +54,9 @@ h1,
 h2 {
     font-size: 3rem;
 }
-
+h2 {
+    text-align: center;
+}
 h3 {
     font-size: 2.5rem;
 }
@@ -90,8 +98,8 @@ nav {
 
 nav>span,
 nav>a {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 #home_head {
@@ -106,8 +114,10 @@ nav>a {
     text-indent: 2rem;
     padding: 1rem;
     margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 400px;
 }
-
 
 #narrow-nav div {
     width: 1.5rem;
@@ -118,8 +128,17 @@ nav>a {
 
 #narrow-nav {
     display: none;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
+#clock {
+    width: fit-content;
+    font-family: "Bradley Hand", sans-serif;
+    color:darkseagreen;
+    font-size: 1.4rem;
+}
 @media (max-width: 1000px) {
 
     nav {
@@ -158,24 +177,45 @@ nav>a {
         font-size: 1.2rem;
         color: darkslategrey;
     }
+    #clock {
+        font-size: 1rem;
+        color:white;
+    }
 }
 
-/* start for index page */
 
+
+
+
+
+/* start for index page */
 #welcome {
+    letter-spacing: 0.5rem;
+    animation: letterspacing 2.5s;
+  }
+  @keyframes letterspacing {
+    0% {
+      letter-spacing: -4rem;
+    } 
+    100% {
+      letter-spacing: 0.5rem;
+    }
+  }
+
+.welcome {
     color: rosybrown;
     padding: 0;
     margin: 0.5rem 0.5rem;
     text-align: center;
 }
 
-#welcome~p {
+.welcome~p {
     margin: 0 1.5rem;
     padding: 0.6rem;
     color: gray;
 }
 
-#welcome+p::first-letter {
+.welcome+p::first-letter {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -285,9 +325,6 @@ nav span {
 }
 #backtotop-narrow {
     display: none;
-}
-#hometown_main h2 {
-    text-align: center;
 }
 
 /* animation of the h2*/
@@ -449,8 +486,7 @@ iframe {
     justify-items: center;
 }
 
-#h3-puss,
-h2 {
+.titles{
     text-align: center;
     margin-bottom: 1rem;
     padding: 0.3rem;
@@ -459,9 +495,7 @@ h2 {
 /*puss photo slide show*/
 #puss-photo-container {
     float: left;
-    margin-top: 1rem;
-    ;
-    padding-right: 0.5rem;
+    margin: 1.5rem 0.5rem 0 2rem;
     width: 350px;
     height: 270px;
     background-image: url(../FurryFriends/image/puss1_400x300.jpg);
@@ -469,37 +503,44 @@ h2 {
     animation: slide 20s ease-in-out infinite;
     -moz-animation: slide 20s ease-in-out infinite;
 }
+#puss-article p {
+    margin-left: 2rem;
+    margin-left: 2rem;
+}
+#amber-article p{
+    margin-left: 2rem;
+    margin-left: 2rem;
+}
 
 @keyframes slide {
-    12% {
+    0%, 100%{
         background-image: url(../FurryFriends/image/puss1_400x300.jpg);
     }
-
-    25% {
+    12% {
         background-image: url(../FurryFriends/image/puss2_400x300.jpg);
     }
 
-    37% {
+    25% {
         background-image: url(../FurryFriends/image/puss3_400x300.jpg);
     }
 
-    50% {
+    37% {
         background-image: url(../FurryFriends/image/puss4_400x300.jpg);
     }
 
-    62% {
+    50% {
         background-image: url(../FurryFriends/image/puss5_400x300.jpg);
     }
 
-    75% {
+    62% {
         background-image: url(../FurryFriends/image/puss6_400x300.jpg);
     }
 
-    87% {
+    75% {
         background-image: url(../FurryFriends/image/puss_400x300.jpg);
     }
 
-    100% {
+    87% {
         background-image: url(../FurryFriends/image/puss8_400x300.jpg);
     }
 }
@@ -509,6 +550,7 @@ h2 {
 #puss-video {
     text-align: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #puss-video video {
@@ -518,19 +560,82 @@ h2 {
     box-shadow: 4px 4px 6px 8px rgba(66, 64, 64, 0.498);
 }
 
-#amber-photo {
+#amber-photo, #if-game, #cute-Amber, #game-instruction {
     text-align: center;
 }
+#if-game, #game-instruction{
+    color:peru;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#yes-button {
+    margin-right: 1rem;
+    margin-left: 23rem;
+    border-top: 2px solid peru;
+    border-left: 2px solid peru;
+    background-color: gray;
+    color: white;
+    animation: wiggle 2s infinite linear;
+    transform-origin: 50% 5em;
+} 
+#no-button {
+    margin-left: 1rem;
+    margin-right: 23rem;
+    border-top: 2px solid peru;
+    border-left: 2px solid peru;
+    background-color: gray;
+    color: white;
+}
 
+#furryfriends h2 {
+    margin-bottom: 0;
+}
+
+@keyframes wiggle {
+    0%, 7%{
+        transform: rotateZ(0);
+      }
+      15% {
+        transform: rotateZ(-15deg);
+      }
+      20% {
+        transform: rotateZ(10deg);
+      }
+      25% {
+        transform: rotateZ(-10deg);
+      }
+      30% {
+        transform: rotateZ(6deg);
+      }
+      35% {
+        transform: rotateZ(-4deg);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+      }
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.photoGuess:hover {
+    cursor: pointer;
+}
 #amber-photo img {
-    width: 35vw;
-    height: auto;
-    min-width: 380px;
+    width: auto;
+    height: 45vh;
+    min-height: 200px;
+}
+.hide {
+    display: none;
 }
 
 #amber-photo figcaption {
     margin-top: 0;
 }
+
 
 @media (max-width: 1000px) {
     #puss-article {
@@ -545,52 +650,56 @@ h2 {
 
 /*start of hobby page*/
 #hobby-main {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3.5rem; 
+    justify-content: center;
+    align-items: center;
 }
 
 .hobby {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: justify;
     align-items: center;
-    gap: 6rem;
-    margin: 2rem;
-}
-
-.hobby-row-reverse {
-    flex-direction: row-reverse;
-}
-
-.hobby h2 {
-    height: fit-content;
+    border-radius: 50%;
     width: 18rem;
-    background-color: darkgrey;
+    height: 18rem;
+    background-size: cover;
+}
+#hobby-travel {
+    background-image: url("../Hobby/travel/image/travel-poster_500x500.jpg");
+}
+#hobby-photography {
+    background-image: url("../Hobby/photography/image/photography-poster.jpg");
+}
+#hobby-music {
+    background-image: url("../Hobby/music/image/music_2_500x500.jpg");
+}
+
+#hobby-other {
+    background-image: url("../Hobby/others/other-hobby-poster_500x500.jpg");
+}
+
+#hobby-main h2 {
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#hobby-main h3 {
+    height: fit-content;
+    width: fit-content;
+}
+#hobby-main a {
     color: white;
 }
 
-.hobby h2:hover {
-    background-color: antiquewhite;
-    color: darkgray;
+#hobby-main a:hover {
+    color: gold;
 }
 
-.hobby figure {
-    width: 24vw;
-    box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, 0.7);
-}
-
-.hobby img {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-}
-
-.hobby a {
-    text-decoration: none;
-}
 
 @media (max-width: 1000px) {
     .hobby {
@@ -629,7 +738,6 @@ h2 {
     margin: 1.5rem 4rem;
     padding: 0.5rem;
     font-size: 2rem;
-    text-align: center;
 }
 
 #travel-photo-container {
@@ -646,7 +754,7 @@ h2 {
     max-width: 330px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
+    margin: 2rem 1rem;
 }
 
 .caption {
@@ -675,10 +783,7 @@ h2 {
 
 @media (max-width: 1000px) {
     #travel h2 {
-        margin: 1.5rem 4rem;
-        padding: 0.5rem;
         font-size: 1.5rem;
-        text-align: center;
     }
 }
 
@@ -695,7 +800,6 @@ h2 {
     margin: 1.5rem 4rem;
     padding: 0.5rem;
     font-size: 2rem;
-    text-align: center;
 }
 
 #photography-container1 {
@@ -761,11 +865,12 @@ h2 {
         margin: 1.5rem 4rem;
         padding: 0.5rem;
         font-size: 1.5rem;
-        text-align: center;
     }
 }
 
 /* end of hobby page*/
+
+/* start of experience page*/
 
 #experience {
     display: flex;
@@ -810,6 +915,15 @@ h2 {
     margin: 1rem 1rem 0 0;
 }
 
+#experience-text::first-letter, #experience-text-2::first-letter {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+#experience-text-2 {
+    margin-top: 0;
+}
+
 table {
     width: fit-content;
     margin-top: 2rem;
@@ -817,17 +931,20 @@ table {
     margin-left: auto;
 }
 
+
+tr:nth-child(even) {
+    background-color: rgba(85, 107, 47, 0.244);
+}
+table:last-child {
+    border-bottom: 2px solid lightgray;
+}
 th {
+    background-color: rgba(85, 107, 47, 0.851);
+    color: white;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-top: 1px solid lightgray;
-    border-bottom: 2px solid gray;
-    text-align: center;
-}
-
-tr.even {
-    background-color: lightgray;
 }
 
 tr:hover {
@@ -836,14 +953,44 @@ tr:hover {
 
 #foot {
     text-align: right;
-    border-bottom: 2px solid lightgray;
 }
 
 td,
 th {
     padding: 0.3rem 0.5rem;
+    text-align: center;
 }
 
+#check {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+#academicBackground {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#academicBackground h3{
+    margin-bottom: 0;
+}    
+#academicBackground input {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    overflow-x: scroll;
+}
+
+#button {
+    border-color: rgba(58, 77, 58, 0.491);
+    background-color: rgba(54, 79, 54, 0.744);
+    color: white;
+}
 /* end of experience page*/
 
 /* start of contact page*/

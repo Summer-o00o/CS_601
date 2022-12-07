@@ -8,6 +8,9 @@
     <meta name="author" content="Luyao Wang">
     <meta name="description" content="previous experience as a reseasrch technician and classes taken for now">
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
+    <script src="../jsfile/clock.js" defer></script>
+    <script src="../jsfile/academicBackground.js" defer></script>
+    <script src="../jsfile/hangberger.js" defer></script>
 </head>
 
 
@@ -16,117 +19,131 @@
         <header>
             <h1 id="home_head">
                 Luyao's Sweet Home o_0
+                <div id="clock"></div>
             </h1>
-            <nav>
-                <a class="home_nav" href="../Index/index.html">Home</a>
-                <a href="../Hometown/hometown.html">Hometown</a>
-                <a href="../FurryFriends/furryfriends.html">Furry Friends</a>
-                <a href="../Hobby/hobby.html">Hobby</a>
-                <span>Experience</span>
-                <a href="../Contact/contact.html">Contact</a>
-            </nav>
 
-            <nav id="narrow-nav">
-                <div></div>
-                <div></div>
-                <div></div>
-            </nav>
+                <nav id="narrow-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </nav>
+                <nav class="nav">
+                    <a class="home_nav" href="../Index/index.html">Home</a>
+                    <a href="../Hometown/hometown.html">Hometown</a>
+                    <a href="../FurryFriends/furryfriends.html">Furry Friends</a>
+                    <a href="../Hobby/hobby.html">Hobby</a>
+                    <span>Experience</span>
+                    <a href="../Contact/contact.html">Contact</a>
+                </nav>
+
+
         </header>
         <main id="experience">
-                <h2>Experience</h2>
-                <section>
-                    <h3>
-                        Previous Experience
-                    </h3>
-                    <figure>
-                        <img src="image/ou.jpg" alt="a photo of OU" width="640" height="480">
-                        <figcaption>A photo of OU</figcaption>
-                    </figure>
-                    <p>
-                        I had my master degree in Microbiology from University of Oklahoma and used to be a research
-                        technician
-                        in <abbr title="Oklahoma Medical Research Foundation">OMRF</abbr>, focuing on ovarian cancer.
-                        Clicker <a href="https://en.wikipedia.org/wiki/Ovarian_cancer" target="_blank">here</a> if you
-                        want to know
-                        more about ovarian cancer.
-                    </p>
+            <section>
+                <h3>
+                    Previous Experience
+                </h3>
+                <figure>
+                    <img src="image/ou.jpg" alt="a photo of OU" width="640" height="480">
+                    <figcaption>Univeresity of Oklahoma</figcaption>
+                </figure>
+                <p id="experience-text">
+                    I got my bachelor's degree from China, then got my master's degree in Microbiology from University
+                    of Oklahoma. After that, I became a research
+                    technician
+                    in <abbr title="Oklahoma Medical Research Foundation">OMRF</abbr>, focuing on ovarian cancer.
+                    Clicker <a href="https://en.wikipedia.org/wiki/Ovarian_cancer" target="_blank">here</a> if you
+                    want to know
+                    more about ovarian cancer.
+                </p>
 
-                    <p><b>Here are some publications:</b></p>
-                    <ol>
-                        <li>
-                            Ana Luiza Drumond- Bock, Magdalena Cybula, Luyao Wang, Lin Wang, Magdalena Bieniasz. Cloning
-                            BRD4
-                            long isoform into overexpression vectors for stable overexpression of BRD4-L in mammalian
-                            cells.
-                            <i>STAR Protocols.</i> [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9617197/"
-                                target="_blank">PMC free article</a>]
-                        </li>
-                        <li>
-                            Lin Wang, Magdalena Cybula, Maria Rostworowska, Luyao Wang, Patryk Mucha, Magdalena
-                            Buliczand,
-                            Magdalena Bieniasz. Upregulation of Succinate Dehydrogenase (SDHA) Contributesto Enhanced
-                            Bioenergetics of Ovarian Cancer Cells and HigherSensitivity to Anti-Metabolic Agent
-                            Shikonin.
-                            <i>Cancers.</i> [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9599980/"
-                                target="_blank">PMC
-                                free article</a>]
-                        </li>
-                        <li>
-                            Luyao Wang, Lin Wang, Magdalena Cybula, Ana Luiza Drumond-Bock, Katherine M Moxley,
-                            Magdalena
-                            Bieniasz . Multi-kinase targeted therapy as a promising treatment strategy for ovarian
-                            tumors
-                            expressing sfRon receptor. <i>Genes&Cancer.</i> [<a
-                                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7805538/" target="_blank">PMC free
-                                article</a>]
-                        </li>
-                        <li>
-                            Katherine M. Moxley, Luyao Wang, Alana L. Welm, Magdalena Bieniasz. Short-form Ron is a
-                            novel
-                            determinant of ovarian cancer initiation and progression. <i>Genes&Cancer.</i> [<a
-                                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979590/" target="_blank">PMC free
-                                article</a>]
-                        </li>
-                        <li>
-                            Luyao Wang, Peter Bradstock, Chuang Li, Michael J McInerney, Lee R Krumholz. The role of Rnf
-                            in ion
-                            gradient formation in <i>Desulfovibrio alaskensis</i>. <i>PeerJ.</i> [<a
-                                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4841214/" target="_blank">PMC free
-                                article</a>]
-                        </li>
-                    </ol>
+                <p><b>Here are some publications:</b></p>
+                <ol>
+                    <li>
+                        Ana Luiza Drumond- Bock, Magdalena Cybula, Luyao Wang, Lin Wang, Magdalena Bieniasz. Cloning
+                        BRD4
+                        long isoform into overexpression vectors for stable overexpression of BRD4-L in mammalian
+                        cells.
+                        <i>STAR Protocols.</i> [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9617197/"
+                            target="_blank">PMC free article</a>]
+                    </li>
+                    <li>
+                        Lin Wang, Magdalena Cybula, Maria Rostworowska, Luyao Wang, Patryk Mucha, Magdalena
+                        Buliczand,
+                        Magdalena Bieniasz. Upregulation of Succinate Dehydrogenase (SDHA) Contributesto Enhanced
+                        Bioenergetics of Ovarian Cancer Cells and HigherSensitivity to Anti-Metabolic Agent
+                        Shikonin.
+                        <i>Cancers.</i> [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9599980/"
+                            target="_blank">PMC
+                            free article</a>]
+                    </li>
+                    <li>
+                        Luyao Wang, Lin Wang, Magdalena Cybula, Ana Luiza Drumond-Bock, Katherine M Moxley,
+                        Magdalena
+                        Bieniasz . Multi-kinase targeted therapy as a promising treatment strategy for ovarian
+                        tumors
+                        expressing sfRon receptor. <i>Genes&Cancer.</i> [<a
+                            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7805538/" target="_blank">PMC free
+                            article</a>]
+                    </li>
+                    <li>
+                        Katherine M. Moxley, Luyao Wang, Alana L. Welm, Magdalena Bieniasz. Short-form Ron is a
+                        novel
+                        determinant of ovarian cancer initiation and progression. <i>Genes&Cancer.</i> [<a
+                            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979590/" target="_blank">PMC free
+                            article</a>]
+                    </li>
+                    <li>
+                        Luyao Wang, Peter Bradstock, Chuang Li, Michael J McInerney, Lee R Krumholz. The role of Rnf
+                        in ion
+                        gradient formation in <i>Desulfovibrio alaskensis</i>. <i>PeerJ.</i> [<a
+                            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4841214/" target="_blank">PMC free
+                            article</a>]
+                    </li>
+                </ol>
+            </section>
+            <hr>
+            <section id="current-experience">
+                <h3>Experience as a software developer</h3>
+                <p id="experience-text-2">
+                    This is my first semester as a software development major. To be honest, I don't have too much
+                    experience for now. But I am pretty sure that this section will expand soon!
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Semester</th>
+                            <th>Class Number</th>
+                            <th>Class Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022 Fall O1</td>
+                            <td>CS300</td>
+                            <td>Introduction to Software Development</td>
+                        </tr>
+                        <tr class="even">
+                            <td>2022 Fall O2</td>
+                            <td>CS601</td>
+                            <td>Web Application Development</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="foot" colspan="3">Total class taken : 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <hr>
+            <section id="academicBackground">
+                <h3>Academic Background</h3>
+                <p id="check">Complete academic background? <span>&#128071;</span></p>
+                <input id="button" type="button" name="button" value="Click me!">
+                <div id="table"></div>
+            </section>
 
-                </section>
-                <hr>
-                <section id="current-experience">
-                    <h3>Experience as a software developer</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Semester</th>
-                                <th>Class Number</th>
-                                <th>Class Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2022 Fall O1</td>
-                                <td>CS300</td>
-                                <td>Introduction to Software Development</td>
-                            </tr>
-                            <tr class="even">
-                                <td>2022 Fall O2</td>
-                                <td>CS601</td>
-                                <td>Web Application Development</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td id="foot" colspan="3">Total class taken : 2</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </section>
         </main>
         <footer>
             <p>

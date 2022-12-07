@@ -9,6 +9,9 @@
         content="personal profolio site, including self-introduction, information
         of my hometown, hobbies, pets, previous experience and contact information">
         <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
+        <script src="../jsfile/clock.js" defer></script>
+        <script src="../jsfile/welcomeMessage.js" defer></script>
+        <script src="../jsfile/hangberger.js" defer></script>
     </head>
 
     <body>
@@ -16,27 +19,35 @@
             <header>
                 <h1 id="home_head">
                     Luyao's Sweet Home o_0
+                    <div id="clock"></div>
                 </h1>
-                <nav>
-                    <span class="home_nav">Home</span> 
-                    <a href="../Hometown/hometown.html">Hometown</a> 
-                    <a href="../FurryFriends/furryfriends.html">Furry Friends</a> 
-                    <a href="../Hobby/hobby.html">Hobby</a> 
-                    <a href="../Experience/experience.html">Experience</a> 
-                    <a href="../Contact/contact.html">Contact</a>
-                </nav>
 
-                <nav id="narrow-nav">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </nav>
+                    <nav id="narrow-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </nav>
+                    
+                    <nav class="nav">
+                        <span class="home_nav">Home</span> 
+                        <a href="../Hometown/hometown.html">Hometown</a> 
+                        <a href="../FurryFriends/furryfriends.html">Furry Friends</a> 
+                        <a href="../Hobby/hobby.html">Hobby</a> 
+                        <a href="../Experience/experience.html">Experience</a> 
+                        <a href="../Contact/contact.html">Contact</a>
+                    </nav>
+
+
+
+
+                
             </header>
 
             <main id="index_main">
                 <img id="portrait" src="image/portrait_7_500x341.jpg" alt="welcome" width="384" height="341">
                 <article id="index_article">
-                    <h2 id="welcome">Welcome To Luyao's Space!</h2>
+                    <h2 class="welcome" id="welcome"></h2>
+                    <h2 class="welcome">Welcome To Luyao's Space!</h2>
                     <p>
                         Hi there, from here you will get to know a girl named Luyao Wang who is
                         originally from China, and has been in Oklahoma for 10 years! She got her Master's degree in Microbiology from University of Oklhoma, then started to work in Oklahoma Medical Research Foundation as a research technician.
@@ -51,7 +62,7 @@
                     </p>
                 </article>
                 
-
+                
             </main>
             <footer>
                 <p>
