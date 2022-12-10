@@ -10,77 +10,18 @@
         content="I like travelling, expecially hiking, camping, I also like playing piano, listenning to music, sometimes doing some handwork ">
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
     <script src="../jsfile/clock.js" defer></script>
-    <script src="../jsfile/hangberger.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js" defer></script>
+    
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <h1 id="home_head">
-                Luyao's Sweet Home o_0
-                <div id="clock"></div>
-            </h1>
+        <header id="header-menu" active-page="hobby"></header>
+        <script type="module" src="../jsfile/vue-header.js" defer></script>
 
-                <nav id="narrow-nav">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </nav>
-                <nav class="nav">
-                    <a class="home_nav" href="../Index/index.html">Home</a>
-                    <a href="../Hometown/hometown.html">Hometown</a>
-                    <a href="../FurryFriends/furryfriends.html">Furry Friends</a>
-                    <span>Hobby</span>
-                    <a href="../Experience/experience.html">Experience</a>
-                    <a href="../Contact/contact.html">Contact</a>
-                </nav>
-
-
-        </header>
         <main id="hobby-main">
-            <h2>I love to do so many things. I love travelling to different places, enjoying differnet scenaries,
-                cultures and food. Durding the trip, I like to take photos to record those unforgetable moments. I like
-                to listen to music, singing songs and playing piano and many many ...</h2>
-            <section class="hobby" id="hobby-travel">
-                <h3><a href="./travel/travel.html">Traveling</a></h3>
-                <!--<img src="./travel/image/travel-photo_600x450.jpg" alt="travel-poster">-->
-            </section>
-
-
-            <section class="hobby" id="hobby-photography">
-                <h3><a href="./photography/photography.html">Photography</a> </h3>
-                <!--   <img src="./photography/image/photography-poster_1_600x450.jpg" alt="photo-graphy-poster">-->
-            </section>
-
-
-            <section class="hobby" id="hobby-music">
-                <h3><a href="./music/music.html">music</a></h3>
-                <!--    <img src="./music/image/music_600x450.jpg" alt="music-poster">-->
-            </section>
-
-
-            <section class="hobby" id="hobby-other">
-                <h3>Others</h3>
-                <!--    <img src="./others/other-hobby_poster_600x450.jpg" alt="poster">-->
-            </section>
-
-            <video poster="video/shrimp.jpeg" width="500" height="400" controls preload="auto">
-                <source src="video/video.mp4" type="video/mp4">
-                <source src="video/video.webm" type="video/webm">
-            </video>
-
-
-            <section>
-                <h2>Handicrafts</h2>
-                <p>
-                    I love beautiful things, so sometimes when I have time, I like to make some pendants or bracelet for
-                    fun!
-                </p>
-                <p>
-                    Check <a href="https://www.etsy.com/shop/LittleSummerTime?ref=seller-platform-mcnav"
-                        target="_blank">here </a> to see my handicrafts!
-                </p>
-            </section>
+            <div id="vue-hobby"></div>
+            <script type="module" src="../jsfile/vue-hobby.js" defer></script>
         </main>
         <footer>
             <p>

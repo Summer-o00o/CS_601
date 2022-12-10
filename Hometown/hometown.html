@@ -10,33 +10,13 @@
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
     <script src="../jsfile/clock.js" defer></script>
     <script src="../jsfile/hangberger.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js" defer></script>
 </head>
 
 <body>
     <div class="container hometown_container">
-        <header id="top">
-            <h1 id="home_head">
-                Luyao's Sweet Home o_0
-                <div id="clock"></div>
-            </h1>
-
-                <nav id="narrow-nav">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </nav>
-
-                <nav id="hometown_page" class="nav">
-                    <a class="home_nav" href="../Index/index.html">Home</a>
-                    <span>Hometown</span>
-                    <a href="../FurryFriends/furryfriends.html">Furry Friends</a>
-                    <a href="../Hobby/hobby.html">Hobby</a>
-                    <a href="../Experience/experience.html">Experience</a>
-                    <a href="../Contact/contact.html">Contact</a>
-                </nav>
-
-
-
+            <header id="header-menu" active-page="hometown"></header>
+            <script type="module" src="../jsfile/vue-header.js" defer></script>
         </header>
 
 
@@ -88,6 +68,9 @@
                         to the east and south, Yantai to the northeast, Weifang to the west and Rizhao to the southwest.
                         Qingdao is one of the most beautiful coastal cities in China.
                     </p>
+                    <noscript>
+                        The map below needs Javascript. Please enable your Javascript to use the google map.
+                    </noscript>
                     <div class="iframe">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412450.0046928357!2d120.08465053054192!3d36.135744323491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35960fd582f8f06b%3A0x614d82fa614cf2f3!2sQingdao%2C%20Shandong%2C%20China!5e0!3m2!1sen!2sus!4v1667787304068!5m2!1sen!2sus"
@@ -153,6 +136,9 @@
                         Here is a fantastic video of Qingdao from you tube! The author studied in Qingdao before and
                         visited it again in 2019 and made this video. Here is his impression about Qingdao:
                     </p>
+                    <noscript>
+                        The youtube video below needs Javascript. Please enable your Javascript to watch the video.
+                    </noscript>
                     <blockquote cite="https://www.youtube.com/watch?v=GmEbUmgeZ1E">
                         <p>
                             Qingdao is perhaps the most beautiful coastal city in China, and boasts some spectacular
@@ -173,8 +159,8 @@
                     </div>
                 </section>
             </main>
-            <a id="backtotop" href="#top">Back to top&#8593;</a>
-            <a id="backtotop-narrow" href="#top">&#8593;</a>
+            <a id="backtotop" href="#header-menu">Back to top&#8593;</a>
+            <a id="backtotop-narrow" href="#header-menu">&#8593;</a>
         </div>
 
         <footer>

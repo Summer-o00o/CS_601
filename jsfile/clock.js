@@ -21,4 +21,4 @@ let time = () => {
     setTimeout(() => { time(); }, 1000);
 };
 
-time();
+window.addEventListener('DOMContentLoaded', time); 

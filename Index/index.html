@@ -11,40 +11,16 @@
         <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
         <script src="../jsfile/clock.js" defer></script>
         <script src="../jsfile/welcomeMessage.js" defer></script>
-        <script src="../jsfile/hangberger.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js" defer></script>
     </head>
 
     <body>
         <div class="container">
-            <header>
-                <h1 id="home_head">
-                    Luyao's Sweet Home o_0
-                    <div id="clock"></div>
-                </h1>
-
-                    <nav id="narrow-nav">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </nav>
-                    
-                    <nav class="nav">
-                        <span class="home_nav">Home</span> 
-                        <a href="../Hometown/hometown.html">Hometown</a> 
-                        <a href="../FurryFriends/furryfriends.html">Furry Friends</a> 
-                        <a href="../Hobby/hobby.html">Hobby</a> 
-                        <a href="../Experience/experience.html">Experience</a> 
-                        <a href="../Contact/contact.html">Contact</a>
-                    </nav>
-
-
-
-
-                
-            </header>
+            <header id="header-menu" active-page="home"></header>
+            <script type="module" src="../jsfile/vue-header.js" defer></script>             
 
             <main id="index_main">
-                <img id="portrait" src="image/portrait_7_500x341.jpg" alt="welcome" width="384" height="341">
+                <img id="portrait" src="Index/image/portrait_7_500x341.jpg" alt="welcome" width="384" height="341">
                 <article id="index_article">
                     <h2 class="welcome" id="welcome"></h2>
                     <h2 class="welcome">Welcome To Luyao's Space!</h2>

@@ -10,34 +10,13 @@
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
     <script src="../jsfile/clock.js" defer></script>
     <script src="../jsfile/guessGame.js" defer></script>
-    <script src="../jsfile/hangberger.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <h1 id="home_head">
-                Luyao's Sweet Home o_0
-                <div id="clock"></div>
-            </h1>
-
-                <nav id="narrow-nav">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </nav>
-                
-                <nav class="nav">
-                    <a class="home_nav" href="../Index/index.html">Home</a>
-                    <a href="../Hometown/hometown.html">Hometown</a>
-                    <span>Furry Friends</span>
-                    <a href="../Hobby/hobby.html">Hobby</a>
-                    <a href="../Experience/experience.html">Experience</a>
-                    <a href="../Contact/contact.html">Contact</a>
-                </nav>
-
-
-        </header>
+            <header id="header-menu" active-page="furryfriends"></header>
+            <script type="module" src="../jsfile/vue-header.js" defer></script>
         <main id="furryfriends">
             <h2>
                 My cutiest friends Puss and Amber <span>&#128151;</span>

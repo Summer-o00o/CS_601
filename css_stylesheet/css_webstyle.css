@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /*border-style: solid;*/
+   /*border-style: solid;*/
     border-color: darkgray;
 }
 hr {
@@ -119,7 +119,7 @@ nav>a {
     min-width: 400px;
 }
 
-#narrow-nav div {
+/*#narrow-nav div {
     width: 1.5rem;
     height: 0.15rem;
     background-color: grey;
@@ -132,13 +132,32 @@ nav>a {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
 }
-
+*/
 #clock {
     width: fit-content;
     font-family: "Bradley Hand", sans-serif;
     color:darkseagreen;
     font-size: 1.4rem;
 }
+
+a:link {
+    color: rgb(113, 159, 113);
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgoldenrod
+}
+
+nav span {
+    color: lightcoral
+}
+
 @media (max-width: 1000px) {
 
     nav {
@@ -225,23 +244,6 @@ nav>a {
     font-size: 1.1rem;
 }
 
-a:link {
-    color: rgb(113, 159, 113);
-    text-decoration: none;
-}
-
-a:visited {
-    color: grey;
-    text-decoration: none;
-}
-
-a:hover {
-    color: darkgoldenrod
-}
-
-nav span {
-    color: lightcoral
-}
 
 #portrait {
     max-width: 35vw;
@@ -652,8 +654,7 @@ iframe {
 #hobby-main {
     margin-top: 2rem;
     display: flex;
-    flex-flow: row wrap;
-    gap: 3.5rem; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -664,9 +665,18 @@ iframe {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 18rem;
-    height: 18rem;
+    width: 8rem;
+    height: 8rem;
     background-size: cover;
+}
+#button-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: center;
+    width: 80%;
+    min-width: 200px;
 }
 #hobby-travel {
     background-image: url("../Hobby/travel/image/travel-poster_500x500.jpg");
@@ -678,29 +688,43 @@ iframe {
     background-image: url("../Hobby/music/image/music_2_500x500.jpg");
 }
 
-#hobby-other {
-    background-image: url("../Hobby/others/other-hobby-poster_500x500.jpg");
-}
 
-#hobby-main h2 {
+#hobby-main-intro {
+    flex-wrap:wrap ;
     font-size: 2.5rem;
     padding: 2rem;
-    margin: 1rem;
+    padding-bottom: 1rem;
 }
 
-#hobby-main h3 {
-    height: fit-content;
-    width: fit-content;
-}
 #hobby-main a {
-    color: white;
+    margin:0;
+    font-size: 1rem;
+    color:white;
+
 }
 
 #hobby-main a:hover {
     color: gold;
 }
 
-
+#vue-hobby {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#vue-travel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#vue-photography {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 @media (max-width: 1000px) {
     .hobby {
         display: flex;
@@ -728,13 +752,13 @@ iframe {
 /* end of hobby page*/
 
 /*start of travel page*/
-#travel {
+/*#travel {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+}*/
 
-#travel h2 {
+.hobby-h2 {
     margin: 1.5rem 4rem;
     padding: 0.5rem;
     font-size: 2rem;
@@ -755,6 +779,7 @@ iframe {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 2rem 1rem;
+    
 }
 
 .caption {
@@ -767,7 +792,14 @@ iframe {
     height: auto;
     padding: 0;
     margin: 0;
-
+    -moz-filter: blur(50%);
+    -webkit-filter: blur(50%);
+    -ms-filter: blur(50%);
+    filter:blur(0.3rem);
+}
+.travel-photos img:hover {
+    transition: all 0.3s ease-in-out;
+    filter:none;
 }
 
 .hobby a:link {
@@ -796,68 +828,53 @@ iframe {
     justify-content: center;
 }
 
-#photographying h2 {
-    margin: 1.5rem 4rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-}
-
-#photography-container1 {
+#photography-container1,
+#photography-container2,
+#photography-container3 {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     gap: 0.3rem;
     margin-bottom: 0;
     margin-top: 3rem;
-    padding-bottom: 0;
 }
 
 #photography-container2 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     align-items: flex-start;
-    gap: 0.3rem;
     margin: 0;
-    padding: 0;
 }
 
 #photography-container3 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     align-items: flex-start;
-    gap: 0.3rem;
     margin-top: 0;
     margin-bottom: 6rem;
-    padding-top: 0;
 }
 
 .photography {
-    max-width: 13vw;
+    width:16%;
+    max-width: 20%;
     height: fit-content;
     margin: 0;
     padding: 0;
 }
 
 #photography-container2 figure {
-    max-width: 15vw;
+    width: 18%;
+    max-width: 22%;
 }
 
 
 .photography img {
     width: 100%;
     height: auto;
-    padding: 0;
-    transition: transform .5s;
-    margin: 0;
+    transition: transform .6s;
 }
 
 .photography img:hover {
-    -ms-transform: scale(2.5);
-    -webkit-transform: scale(2.5);
-    transform: scale(2.5);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
 }
 
 @media (max-width: 1000px) {
@@ -869,6 +886,45 @@ iframe {
 }
 
 /* end of hobby page*/
+/* start of music page*/
+#rap-music, #pop-music, #instrument-music{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; 
+}
+#rap-music {
+    flex-direction:row-reverse;
+}
+#vue-music iframe {
+    margin: 1rem;
+    width:50vw;
+    height: 30vw;
+    min-width: 350px;
+    min-height: 250px;
+    max-width: 500px;
+    max-height:350px;
+}
+#vue-music h3 {
+    text-align: center;
+    color: lightslategray;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.music-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0.5rem 1rem 1rem 0.5rem;
+    width: 45vw;
+    max-width: 450px;
+    box-shadow: 1px 5px 8px lightgray ;
+    background-color: rgba(243, 237, 224, 0.283);
+}
 
 /* start of experience page*/
 
