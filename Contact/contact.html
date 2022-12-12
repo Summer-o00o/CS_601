@@ -10,37 +10,95 @@
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
     <script src="../jsfile/clock.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js" defer></script>
+    <script src="../jsfile/contactForm.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header id="header-menu" active-page="contact"></header>
         <script type="module" src="../jsfile/vue-header.js" defer></script>
-        
-    <main id="contact-main">
-        <section id="contact">
-        <h2>Questions?</h2>
-        <p>
-            No problem! Here is my contact imformation!
-        </p>
-        <address>
-        <p>
-            <b>Email:</b> <a href="mailto:wangluyao880818@gmail.com">wangluyao880818@gmail.com</a>
-        </p>
-        <p>
-            <b>Phone Number:</b> 405795xxxx
-        </p>
-        <p>
-            <b>Address:</b> Sweethome St, Edmond, Oklahoma, 73013
-        </p>
-        </address>        
-    </section>
-    </main>
-    <footer>
-        <p>
-            Copyright &copy; 2022 Luyao Wang. All Rrights Reserved.
-        </p>
-    </footer>
+
+        <main id="contact-main">
+            <h2>Contact Me</h2>
+            <h3 id="success-message"></h3>
+            <form name="CS601Form" id="contact-form">
+                <label for="firstName">
+                    First name:
+                </label>
+                <div class="input">
+                    <input id="firstName" type="text" name="firstName" placeholder="e.g. Summer">
+                    <p class="hideAlert" id="alert1">Minimum 2 English characters!</p>
+                </div>
+                <label for="lastName">
+                    Last name:
+                </label>
+                <div class="input">
+                    <input id="lastName" type="text" name="lastName" placeholder="e.g. Wang">
+                    <p class="hideAlert" id="alert2">Minimum 2 English characters!</p>
+                </div>
+                <label for="email">
+                    Email address:
+                </label>
+                <div class="input">
+                    <input id="email" type="text" name="email" placeholder="e.g. abc@gmail.com">
+                    <p class="hideAlert" id="alert3">Invalid email format!</p>
+                </div>
+                
+                <label for="state">
+                    Which state do you live:
+                </label>
+                <div>
+                    <select id="state-name" name="state">  
+                    </select>
+                    <script type="module" src="../jsfile/vue-state.js" defer></script>
+                </div>
+
+                <fieldset id="radioFieldset">
+                    <legend class="chooseheader">
+                        How do you know my website?
+                    </legend>
+                    <input class="choose" type="radio" name="how-to-know" value="recommend-by-friends"> Recommend by friends<br>
+                    <input class="choose" type="radio" name="how-to-know" value="by-name-search"> By name search<br>
+                    <input class="choose" type="radio" name="how-to-know" value="by-social-media"> By social media<br>
+                </fieldset>
+                <p class="hideAlert" id="radioAlert">
+                    Can't be blank
+                </p>
+
+
+                <fieldset id="checkboxFieldset">
+                    <legend class="chooseheader">
+                        Which part or parts of my website do you like?
+                    </legend>
+                    <input class="choose" type="checkbox" name="home" value="home"> Home <br>
+                    <input class="choose" type="checkbox" name="hometown" value="hometown"> Hometown <br>
+                    <input class="choose" type="checkbox" name="furryfriends" value="furryfriends"> Furry friends <br>
+                    <input class="choose" type="checkbox" name="hobby" value="hobby"> Hobby <br>
+                    <input class="choose" type="checkbox" name="experience" value="experience"> Experience <br>
+                    <input class="choose" type="checkbox" name="contact" value="contact"> Contact <br>
+                </fieldset>
+                <p class="hideAlert" id="checkboxAlert">
+                    Can't be blank
+                </p>
+
+                <label for="message">
+                    Please leave a message:
+                </label>
+                <div class="input">
+                    <textarea id="message" row="10" cols="40" name="message"></textarea>
+                    <p class="hideAlert" id="alert4">At least 5 characters!</p>
+                </div>
+                <div id="submit-container">
+                    <input id="submit" type="submit" name="submit" value="Submit">
+                    <input id="clear" type="reset" value="Clear">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>
+                Copyright &copy; 2022 Luyao Wang. All Rrights Reserved.
+            </p>
+        </footer>
     </div>
 </body>
 

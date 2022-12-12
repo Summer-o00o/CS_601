@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-   /*border-style: solid;*/
+    /*border-style: solid;*/
     border-color: darkgray;
 }
 hr {
@@ -31,7 +31,7 @@ body {
     max-width: 1150px;
     min-width: 400px;
     width: 1150px;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 @font-face {
@@ -161,17 +161,16 @@ nav span {
 @media (max-width: 1000px) {
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
         align-content: center;
-        padding: 0;
-        margin: 0;
-        height: auto;
-        width: auto;
+
     }
 
     nav>a,
     nav>span {
-        margin: 0;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         padding: 0.2rem;
     }
 
@@ -183,15 +182,19 @@ nav span {
 
 @media (max-width: 650px) {
 
+    nav>a,
+    nav>span {
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0.2rem;
+    }
     nav {
-        display: none;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+        height: auto;
+        width: auto;
     }
-
-    #narrow-nav {
-        display: flex;
-        justify-content: center;
-    }
-
     #home_head {
         font-size: 1.2rem;
         color: darkslategrey;
@@ -201,9 +204,6 @@ nav span {
         color:white;
     }
 }
-
-
-
 
 
 
@@ -273,6 +273,11 @@ nav span {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
+    }
+}
+@media (max-width: 650px) {
+    .welcome {
+        font-size: 2rem;
     }
 }
 
@@ -393,7 +398,8 @@ nav span {
 
 iframe {
     max-width: 50vw;
-    height: 50vh;
+    max-height: 400px;
+    height: 40vw;
 }
 
 /*column 1 setting*/
@@ -439,6 +445,13 @@ iframe {
 #culture h4 {
     text-indent: 5%;
     padding: 0.3rem
+}
+
+#qingdao-youtuber {
+    box-shadow: 1px 5px 8px lightgray;
+    background-color: rgba(255, 250, 240, 0.32);
+    border-left: 10px solid olive;
+    padding: 0.5rem 0.5rem 0.5rem 1rem
 }
 
 @media (max-width: 1000px) {
@@ -557,6 +570,7 @@ iframe {
 
 #puss-video video {
     width: 50vw;
+    max-width: 600px;
     height: auto;
     min-width: 350px;
     box-shadow: 4px 4px 6px 8px rgba(66, 64, 64, 0.498);
@@ -627,8 +641,9 @@ iframe {
 }
 #amber-photo img {
     width: auto;
-    height: 45vh;
+    height: 30vw;
     min-height: 200px;
+    max-height: 300px;
 }
 .hide {
     display: none;
@@ -647,7 +662,11 @@ iframe {
         justify-content: center;
     }
 }
-
+@media (max-width: 650px) {
+    #furryfriends h2,h3 {
+        font-size: 2rem;
+    }
+}
 /*end of furryfriends page */
 
 /*start of hobby page*/
@@ -655,8 +674,6 @@ iframe {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .hobby {
@@ -696,13 +713,56 @@ iframe {
     padding-bottom: 1rem;
 }
 
-#hobby-main a {
+
+.hobby a {
     margin:0;
     font-size: 1rem;
     color:white;
-
 }
 
+@media (max-width: 1000px) {
+    .hobby {
+        width: 7rem;
+        height: 7rem;
+        margin: 0.5rem;
+    }
+
+    .hobby a {
+        margin:0;
+        font-size: 0.8rem;
+        color:white;
+    }
+    .hobby figure {
+        min-width: 250px;
+        height: auto;
+    }
+
+    .hobby h2 {
+        height: fit-content;
+        width: 15rem;
+        font-size: 2rem;
+        background-color: darkgrey;
+        color: white;
+    }
+}
+
+@media (max-width: 650px) {
+    .hobby {
+        width: 5rem;
+        height: 5rem;
+    }
+    .hobby a {
+        margin:0;
+        font-size: 0.6rem;
+        color:white;
+    }
+    #hobby-main-intro {
+        font-size: 2rem;
+    }
+}
+a.active{
+    color:gold;
+}
 #hobby-main a:hover {
     color: gold;
 }
@@ -724,29 +784,6 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-@media (max-width: 1000px) {
-    .hobby {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        gap: 0;
-        margin: 1rem;
-    }
-
-    .hobby figure {
-        min-width: 250px;
-        height: auto;
-    }
-
-    .hobby h2 {
-        height: fit-content;
-        width: 15rem;
-        font-size: 2rem;
-        background-color: darkgrey;
-        color: white;
-    }
 }
 
 /* end of hobby page*/
@@ -772,6 +809,10 @@ iframe {
 }
 
 .travel-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 26vw;
     height: auto;
     min-width: 250px;
@@ -788,30 +829,19 @@ iframe {
 }
 
 .travel-photos img {
-    width: 100%;
+    width: 95%;
     height: auto;
     padding: 0;
-    margin: 0;
-    -moz-filter: blur(50%);
+    margin: 0.5rem;
+/*    -moz-filter: blur(50%);
     -webkit-filter: blur(50%);
     -ms-filter: blur(50%);
-    filter:blur(0.3rem);
+    filter:blur(0.3rem);*/
 }
-.travel-photos img:hover {
+/*.travel-photos img:hover {
     transition: all 0.3s ease-in-out;
     filter:none;
-}
-
-.hobby a:link {
-    color: white;
-    text-decoration: none;
-}
-
-.hobby a:visited {
-    color: lightgrey;
-    text-decoration: none;
-}
-
+}*/
 
 @media (max-width: 1000px) {
     #travel h2 {
@@ -868,13 +898,13 @@ iframe {
 .photography img {
     width: 100%;
     height: auto;
-    transition: transform .6s;
 }
 
 .photography img:hover {
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
     transform: scale(2);
+    transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 1000px) {
@@ -945,6 +975,7 @@ iframe {
 
 #experience img {
     width: 40vw;
+    max-width: 600px;
     height: auto;
     min-width: 200px;
     margin-bottom: 0;
@@ -1057,9 +1088,135 @@ th {
     flex-direction: column;
 }
 
-#contact {
-    width: fit-content;
-    height: auto;
-    margin-top: 10rem;
-    margin-left: 5rem;
+form {
+    width: 70%;
+    margin-left: 3rem;
+}
+@font-face {
+    font-family: contact-header;
+    src: url(../css_stylesheet/font_sanserif/mokabella-font-2022-10-18-03-13-08-utc/MokaBeLLa.otf);
+}
+#contact-main h2 {
+    font-family: contact-header;
+    width: 65%;
+    text-align: center;
+    margin-left: 3rem;
+}
+#contact-main label {
+    font-size: 1.1rem;
+    margin-left: 0.4rem;
+}
+#contact-main input {
+    padding: 0.2rem;
+    font-size: 1rem;
+    width: auto;
+    height: fit-content;
+}
+#contact-main div{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+select {
+    width: 15rem;
+    text-align: center;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.hideAlert {
+    visibility: hidden;
+}
+
+.borderAlert {
+    border-color: red;
+}
+
+#checkboxAlert, 
+#radioAlert,
+#alert1, 
+#alert2, 
+#alert3,
+#alert4{
+    color: red;
+}
+#alert1, #alert2, #alert3, #alert4 {
+    padding: 0;
+    margin: 0;
+    margin-left: 2rem;
+}
+#alert4{
+    align-self: center;
+}
+fieldset{
+    width: 55%;
+}
+
+.choose {
+    margin-bottom: 0.3rem;
+}
+.chooseheader {
+    margin-top: 0.4rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+#state-name {
+    margin-bottom: 1rem;
+}
+textarea {
+    font-size: 1rem;
+    height: 10rem;
+}
+#message {
+    margin-top: 0;
+}
+#submit-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#submit, #clear{
+    width: 20%;
+    background-color: #416351;
+    color: lightgoldenrodyellow;
+    border-color: gray;
+}
+#submit:hover {
+    color: #416351;
+    background-color: lightgoldenrodyellow;
+}
+#success-message {
+    width: 70%;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 0;
+    color: salmon;
+    display: none;
+    margin-left: 3rem;
+}
+
+@media (max-width: 1000px) {
+    #alert1, #alert2, #alert3, #alert4,fieldset, .chooseheader {
+        font-size: 0.9rem;
+    }
+    #contact-main label {
+        font-size: 0.9rem;
+    }
+    #contact-main h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #alert1, #alert2, #alert3, #alert4,fieldset, .chooseheader {
+        font-size: 0.7rem;
+    }
+    #contact-main label, input {
+        font-size: 0.7rem;
+    }
+    #contact-main h2 {
+        font-size: 2rem;
+    }
 }

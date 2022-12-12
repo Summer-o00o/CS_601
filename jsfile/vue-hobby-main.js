@@ -13,18 +13,23 @@ const hobby = {
     },
     data() {
         return {
+            defaultTab: "vueHobbyIntro",
+            currentTab:"vueHobbyIntro",
             buttons: [
                 {
                     id: "hobby-travel",
                     name: "Traveling",
+                    tab: "VueTravel",
                 },
                 {
                     id: "hobby-photography",
                     name: "Photography",
+                    tab: "VuePhotography",
                 },
                 {
                     id: "hobby-music",
                     name: "Music",
+                    tab: "VueMusic",
                 },
             ]
         };
@@ -33,13 +38,11 @@ const hobby = {
     template: `
     <div id="button-container">
         <section class="hobby" v-for="button in buttons" :id="button.id">
-            <b><a href="#">{{button.name}}</a></b>
+            <b><a href="#" @click="currentTab===button.tab? this.currentTab=defaultTab : this.currentTab=button.tab" :class="{active: currentTab===button.tab}">{{button.name}}</a></b>
         </section>
-    </div>
-    <vue-hobby-intro></vue-hobby-intro>
-    <vue-travel></vue-travel>
-    <vue-photography></vue-photography>
-    <vue-music></vue-music>
+    </div>    
+    <component :is="currentTab"></component>
+    
     `
 };
 

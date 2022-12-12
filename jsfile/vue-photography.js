@@ -84,7 +84,7 @@ export default {
                 },
                 {
                     src: "../Hobby/photography/image/califonia_1000x750.jpg",
-                    alt: "califonia",
+                    alt: "california",
                     width: "1000",
                     height: "750",
                 }
