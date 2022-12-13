@@ -100,7 +100,10 @@ nav {
     align-items: center;
     justify-content: center;
 }
-
+.home_nav {
+    font-family: Chalkduster, head_style, "Marker Felt", fantasy;
+    font-size: 1.1rem;
+}
 nav>span,
 nav>a {
     margin-left: 2.5rem;
@@ -169,7 +172,9 @@ mark {
         margin-right: 1rem;
         padding: 0.2rem;
     }
-
+    .home_nav {
+        font-size: 1rem;
+    }
     #home_head {
         font-size: 1.8rem;
         color: darkolivegreen;
@@ -198,6 +203,9 @@ mark {
     #clock {
         font-size: 1rem;
         color:white;
+    }
+    .home_nav {
+        font-size: 0.8rem;
     }
 }
 
@@ -233,11 +241,6 @@ mark {
 .welcome+p::first-letter {
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-.home_nav {
-    font-family: Chalkduster, head_style, "Marker Felt", fantasy;
-    font-size: 1.1rem;
 }
 
 
