@@ -6,7 +6,7 @@ const header = {
         return {
             headName: "Luyao's Sweet Home o_0",
             links: ['Home', 'Hometown', 'FurryFriends','Hobby', 'Experience', 'Contact'],
-            Home: "../Index/index.html",
+            Home: "../index.html",
             Hometown:"../Hometown/hometown.html",
             FurryFriends:"../FurryFriends/furryfriends.html",
             Hobby:"../Hobby/hobby.html",
