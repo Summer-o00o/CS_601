@@ -1,17 +1,17 @@
 export default {
     data() {
         return {
-            photography_intro: "Photography helps me to record and remember importment moments or those beutiful sceneries during travelling or in the life.",
+            photography_intro: "Photography helps me to record and remember important moments or beautiful sceneries during traveling and in life.",
             photography_1: [
                 {
                     src: "../Hobby/photography/image/cayan2_1000x750.jpg",
-                    alt: "cayan",
+                    alt: "canyon",
                     width: "1000",
                     height: "750",
                 },
                 {
-                    src: "../Hobby/photography/image/wimon_750x1000.jpg",
-                    alt: "puss",
+                    src: "../Hobby/photography/image/simon_750x1000.jpg",
+                    alt: "simon",
                     width: "750",
                     height: "1000",
                 },
@@ -36,8 +36,8 @@ export default {
             ],
             photography_2: [
                 {
-                    src: "../Hobby/photography/image/yosemiti_1000x750.jpg",
-                    alt: "Yosemiti Park",
+                    src: "../Hobby/photography/image/yosemite_1000x750.jpg",
+                    alt: "Yosemite Park",
                 },
                 {
                     src: "../Hobby/photography/image/cows_1000x750.jpg",
@@ -82,7 +82,7 @@ export default {
                     height: "1000",
                 },
                 {
-                    src: "../Hobby/photography/image/califonia_1000x750.jpg",
+                    src: "../Hobby/photography/image/california_1000x750.jpg",
                     alt: "california",
                     width: "1000",
                     height: "750",

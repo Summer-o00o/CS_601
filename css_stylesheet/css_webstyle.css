@@ -676,6 +676,12 @@ iframe {
     flex-direction: column;
 }
 
+#hobby-reminder {
+    text-align: center;
+    color: grey;
+    font-size: 1.5rem;
+}
+
 .hobby {
     display: flex;
     flex-direction: row;
@@ -768,6 +774,9 @@ iframe {
     }
     .caption {
         font-size: 0.7rem;
+    }
+    #hobby-reminder {
+        font-size: 1rem;
     }
 }
 a.active{

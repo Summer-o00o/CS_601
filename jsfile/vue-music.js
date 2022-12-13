@@ -1,17 +1,17 @@
 export default {
     data() {
         return {
-            music_intro: "I started to learn piano when I was about 6 years old. I guess because of that, I have been in love with music for so many years. Even though I stopped learning it long time ago, every time I heard some good songs or music, I download the scores and try to play them with piano. Beside, I also like pop music, rap music, light music and so on.",
+            music_intro: "I started to learn the piano when I was about 6 years old. I guess because of that, I have been in love with music for so many years. Even though I stopped learning it long time ago, every time I hear some good songs or music, I download the scores and try to play them with my electric piano. I also like pop music, hiphop music, light music and so on.",
             music_type: [
                 {
                     id: "pop-music",
                     title: "China pop music",
-                    text: `This song is one of my favorate songs last year and this year, sang by one of my favorate sings Eason Chen. It has been listened by more than 10 billion times in different music platforms and was covered by many people from different countries. And it's lyric also encouraged millions of people during their tough time.`,
+                    text: `This song is one of my favorite songs last year and this year, sung by one of my favorite singers Eason Chen. It has been listened to by more than 10 billion times in different music platforms and was covered by many people from different countries. And its lyric also gave hope to millions of people during their tough time.`,
                     src: "https://www.youtube.com/embed/Hlp8XD0R5qo",
                 },
                 {
                     id: "rap-music",
-                    title: "China hiphop music",
+                    title: "Chinese hiphop music",
                     text: `Chinese hip hop, also known as C-Rap, is a type of music that becomes more and more popular in China these days. Some pieces have shown really good rap techniques, while other have a strong personal style that no other countries have.`,
                     src: "https://www.youtube.com/embed/i7a8vwx3BPQ",
                 },
