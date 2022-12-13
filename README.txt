@@ -1,3 +1,9 @@
+!!!! Please visit the following address to view my hosted website: https://summer-o00o.netlify.app/index.html.  !!!!
+
+!!! For viewing the website on local machine, please use "npx serve" command. !!!
+
+
+
 Final project:
 
 This project is a portfolio website of myself. It has six main pages. All the pages use flex or grid to make the pages responsive, and Media query is also used. So, the layout is liquid. The header and navigation bar is consistent in all pages, and is user friendly. All the contents are in containers so that when enlarging the screen size, the contents can still be in good shape. Some highlights of using flex, grid or Media query are:
