@@ -14,7 +14,7 @@ const hobby = {
     data() {
         return {
             defaultTab: "vueHobbyIntro",
-            currentTab:"vueHobbyIntro",
+            currentTab: "vueHobbyIntro",
             buttons: [
                 {
                     id: "hobby-travel",

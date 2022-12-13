@@ -11,14 +11,14 @@ export default {
                     figcaption: "2021 Hiking in Hawaii"
                 },
                 {
-                    defaultSrc:"../Hobby/travel/image/hiking_Glacier_National_park_400x300.jpg",
+                    defaultSrc: "../Hobby/travel/image/hiking_Glacier_National_park_400x300.jpg",
                     src1: "../Hobby/travel/image/hiking_Glacier_National_park_400x300.jpg",
                     src2: "../Hobby/travel/image/glacierPark2_400x300.jpg",
                     alt: "hiking in Glacier National Park",
                     figcaption: "2018 Hiking in Glacier National Park"
                 },
                 {
-                    defaultSrc:"../Hobby/travel/image/hiking_in_Colorado_400x300.jpg",
+                    defaultSrc: "../Hobby/travel/image/hiking_in_Colorado_400x300.jpg",
                     src1: "../Hobby/travel/image/hiking_in_Colorado_400x300.jpg",
                     src2: "../Hobby/travel/image/hikingColorado2_400x300.jpg",
                     alt: "hiking in Colorado",
@@ -32,14 +32,14 @@ export default {
                     figcaption: "2017 Travel in Death Valley"
                 },
                 {
-                    defaultSrc:"../Hobby/travel/image/sky-diving_1_400x300.jpg",
+                    defaultSrc: "../Hobby/travel/image/sky-diving_1_400x300.jpg",
                     src1: "../Hobby/travel/image/sky-diving_1_400x300.jpg",
                     src2: "../Hobby/travel/image/sky-diving-2_400x300.jpg",
                     alt: "sky-diving in Honolulu",
                     figcaption: "2021 Sky-diving in Honolulu"
                 },
                 {
-                    defaultSrc:"../Hobby/travel/image/snorkeling_1_400x300.jpg",
+                    defaultSrc: "../Hobby/travel/image/snorkeling_1_400x300.jpg",
                     src1: "../Hobby/travel/image/snorkeling_1_400x300.jpg",
                     src2: "../Hobby/travel/image/snorkeling2_400x300.jpg",
                     alt: "snorkeling in Maui",
@@ -49,10 +49,10 @@ export default {
         };
     },
     methods: {
-        mouseoverSrc: function(image) {
+        mouseoverSrc: function (image) {
             image.defaultSrc = image.src2;
         },
-        mouseoutSrc : function(image) {
+        mouseoutSrc: function (image) {
             image.defaultSrc = image.src1;
         },
     },

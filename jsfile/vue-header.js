@@ -1,16 +1,16 @@
-const {createApp} = Vue;
+const { createApp } = Vue;
 const header = {
     props: ["activePage"],
     data() {
         return {
             headName: "Luyao's Sweet Home o_0",
-            links: ['Home', 'Hometown', 'FurryFriends','Hobby', 'Experience', 'Contact'],
+            links: ['Home', 'Hometown', 'FurryFriends', 'Hobby', 'Experience', 'Contact'],
             Home: "../index.html",
-            Hometown:"../Hometown/hometown.html",
-            FurryFriends:"../FurryFriends/furryfriends.html",
-            Hobby:"../Hobby/hobby.html",
-            Experience:"../Experience/experience.html",
-            Contact:"../Contact/contact.html",
+            Hometown: "../Hometown/hometown.html",
+            FurryFriends: "../FurryFriends/furryfriends.html",
+            Hobby: "../Hobby/hobby.html",
+            Experience: "../Experience/experience.html",
+            Contact: "../Contact/contact.html",
         };
     },
     /*html*/
@@ -35,4 +35,4 @@ const header = {
     `
 };
 
-createApp(header,{activePage: document.getElementById('header-menu').getAttribute('active-page')}).mount("#header-menu");   
+createApp(header, { activePage: document.getElementById('header-menu').getAttribute('active-page') }).mount("#header-menu");   

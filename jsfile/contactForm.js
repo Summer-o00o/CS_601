@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", function () {
     document.getElementById('submit').addEventListener('click', function (event) {
         event.preventDefault();
         if (ifValid() === true) {
-            let successM = document.getElementById('success-message');  
+            let successM = document.getElementById('success-message');
             document.getElementById('contact-form').style.display = "none";
             successM.style.display = "inline";
             successM.innerText = "Thank you for submitting!";

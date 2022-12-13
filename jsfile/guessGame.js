@@ -8,13 +8,13 @@ let noButton;
 const findDog = async () => {
     let response = await fetch("https://dog.ceo/api/breeds/image/random/3");
     let data = await response.json();
-    let {message} = data;
+    let { message } = data;
     let correctPhotoPosition = getRandomPosition();
     let correctPhoto = document.getElementById(correctPhotoPosition);
-    correctPhoto.setAttribute("src", "./image/Amber_400x300.jpg" );
+    correctPhoto.setAttribute("src", "./image/Amber_400x300.jpg");
     let otherPhoto;
-    for (let i=1; i<=4; i++) {
-        if (i!= correctPhotoPosition) {
+    for (let i = 1; i <= 4; i++) {
+        if (i != correctPhotoPosition) {
             otherPhoto = document.getElementById(i);
             otherPhoto.setAttribute("src", message.pop());
         }
@@ -46,7 +46,7 @@ const findDog = async () => {
                 if (eachPhoto.getAttribute("id") != correctPhotoPosition) {
                     eachPhoto.style.display = "none";
                 }
-            }); 
+            });
             figcaption.innerText = "Correct! This is Amber!";
             document.getElementById('cute-Amber').classList.toggle('hide', false);
             instruction.classList.toggle('hide', true);
@@ -56,16 +56,16 @@ const findDog = async () => {
     yesButton.classList.toggle('hide');
     noButton.classList.toggle('hide');
     document.getElementById("if-game").classList.toggle('hide');
-    photo1.addEventListener("click", function(){
+    photo1.addEventListener("click", function () {
         ifCorrect(photo1);
     });
-    photo2.addEventListener("click", function() {
+    photo2.addEventListener("click", function () {
         ifCorrect(photo2);
     });
-    photo3.addEventListener("click", function() {
+    photo3.addEventListener("click", function () {
         ifCorrect(photo3);
     });
-    photo4.addEventListener("click", function() {
+    photo4.addEventListener("click", function () {
         ifCorrect(photo4);
     });
 };
@@ -74,7 +74,7 @@ const showAmber = () => {
     const photo1 = document.getElementById('1');
     const photo2 = document.getElementById("2");
     const instruction = document.getElementById('game-instruction');
-    photo1.setAttribute("src", "./image/Amber_400x300.jpg" );
+    photo1.setAttribute("src", "./image/Amber_400x300.jpg");
     photo2.setAttribute("src", "./image/Amber_2JPG_400x300.jpg");
     figcaption.innerText = "Amber tries to be cute!";
     photo1.classList.toggle('hide');
@@ -90,7 +90,7 @@ const showAmber = () => {
 
 
 
-window.addEventListener("DOMContentLoaded", function(){
+window.addEventListener("DOMContentLoaded", function () {
     yesButton = document.getElementById('yes-button');
     noButton = document.getElementById('no-button');
     yesButton.addEventListener('click', findDog);
