@@ -1,5 +1,4 @@
 const {createApp} = Vue;
-// import header from "../jsfile/header.js";
 const header = {
     props: ["activePage"],
     data() {
@@ -20,8 +19,8 @@ const header = {
     <span id="clock"></span>
     </h1>
     <nav class="nav">
-        <a v-bind:href = "Home" v-if="activePage != 'home'" >Home</a>
-        <span v-else>Home</span>
+        <a class="home_nav" v-bind:href = "Home" v-if="activePage != 'home'" >Home</a>
+        <span class="home_nav" v-else>Home</span>
         <a v-bind:href = "Hometown" v-if="activePage != 'hometown'">Hometown</a>
         <span v-else>Hometown</span>
         <a v-bind:href = "FurryFriends" v-if="activePage != 'furryfriends'">Furry Friends</a>
