@@ -1,27 +1,41 @@
-HOMEWORK 1
+Final project:
 
-Hi Josh,
-Here is my README file that explains my project and effort I made to finish it.
-First of all, I have to say that I have no experience with Web development. So basically HTML, CSS and JavaScript are all new to me. Before this class, the only class I took is CS300, so I can assume probably this area will be difficult for me and I need to spend more time with this class for sure (and try to get the "beyond the standard" credits).
+This project is a portfolio website of myself. It has six main pages. All the pages use flex or grid to make the pages responsive, and Media query is also used. So, the layout is liquid. The header and navigation bar is consistent in all pages, and is user friendly. All the contents are in containers so that when enlarging the screen size, the contents can still be in good shape. Some highlights of using flex, grid or Media query are:
+1. In hometown page, grid is used to create three columns. 
+2. When the screen size becomes smaller, the size of the photos, YouTube videos, google maps etc. will also become small.
+3. Using Media query, when reaching 1000px or 650px width, some elements’ font size will change, the color of the headers (Luyao's Sweet Home o_0) and the clock color will change. The back to top button in hometown page will change to an arrow button. The font size of navigation bar will change smaller then wrap.
 
-So in this project, I made 6 pages for my website, which includes index page, Hometown, Furryfriends, Hobbies, Experience and Contact.
-For index page, I gave a short introduction of myself. A photo was embedded, and some emojis were used. I use <span> for the "Home" in menu bar, not for others. 
-For Hometown page, one photo of my hometown was first embedded using <figure> with <figcaption>. I used <aside> and <ul> tags for the section names I represented, and I also added links so that when you press each one, it will link to a specific part of the same page. For each section, I add <hr> to better separate them. In location part, you can press "Qingdao" and it will open a new window to show information about Qingdao from WIKI. A map was embedded using <iframe>. In culture part, I used <ul> and embedded a photo using <figure> and <img> with <figcaption>. In 2008 Olympic Games part, a link was added so that you can check more information of Qingdao International Sailing Center. In the last part, I use <blockquote> to quote the author's opinion and embedded a video from Youtube. For this part, at first the first video I tried to embedded can not shown on the website. I checked with validator but there is no error. Then I checked online and it seemed someone also have the same issue. I tried their method but it didn't work. However, when I use another video from Youtube, it worked. So I think probably it was the video's issue, or if you have any experience of that, please let me know.
-For FurryFriends page, I used emojis, and embedded several photos. I also embedded a video using <video> tag, and with 2 types of video, one is mp4, the other one is webm. I also added 2 links to other sites.
-For Hobbies page, I embedded several photos with <figure> <imp> <figcaption>. I embedded a video using<video> and <source>. I added a link to other website for the handicrafts part.
-For Experience part, I used <ol> to show the publications and added links to each publications. I used <table> to show the classes I have already taken or is being taken with <thead> <tbody> <tfooter>
-For Contact part, I embedded a photo. And use <address> and <a> to add email link.
+Sematic elements are used throughout the web pages: main, footer, and header are used on almost all the pages, and section, article, aside, figure etc. are used individual pages to denote semantics for the content on the pages.
 
+All the pages are styled with CSS. Some highlights can be:
+1. In the home page, an animation is added to the welcome message when entering the page. The name is highlighted. Portfolio photo is styled.
+2. In the hometown page, animation is added to the header. 
+3. The navigation bar in the header will turn yellow when mouse hovering, and will stay pink when the page is selected.
+4. The navigation bar in the hometown will become pink when hovering and turn light green after visited.
+5. In the Furry Friends page, a slide show of my cat photos is played. On the bottom, a wiggle animation effect is added to the button "let's play!". 
+6. In the hobby page, text on the photo is designed as a link button to its own section. When mouse is hovering the text turn yellow, and when the section is active, the text will stay yellow. In the travelling section, polaroid style is used for photos. In the photography section, when hovering the photo, it will enlarge.
+7. In the experience page, tables are styled. In the academic background table, a horizontal scrolling is added when the window of the website becomes too small.
+8. All the font families used in the website are found online.
 
+JavaScript is widely used in the website. Some highlights can be:
+1. A digit clock is created using JavaScript Date object and is embedded in all the pages. Use of setTimeOut to update time every second.
+2. A good morning/ good afternoon/ good evening welcome message in "Home page" is created using JavaScript based on visit time.
+3.On "Furry Friends" page, JavaScript is used to fetch data, add event listener to buttons and create a small guessing game. The guessing game is to choose the correct photo. If play is chosen, a random position will be generated to contain the correct photo and when user clicks the photo, a function will be used to check if it's the correct one. If not play is chosen, a function will be called to insert 2 photos of Amber and display them on the page.
+4.On "Experience" page, JavaScript is used to fetch data from my glitch site, add event listener to button and process data to create a table.
+5. On "Contact" page, JavaScript is used to validate form, add event listener to button and fetch data from a JSON file created by myself.
 
-HOMEWORK 2
+Vue.js is used in the website. Some highlights can be:
+1. The header which includes navigation bar, digital clock and head text uses Vue and it's embedded in every page. v-if, v-else is used to show either <a> or <span> form of navigation bar.
+2. The "Hobby" page is created with Vue as a single page app that contained three tab-buttons that can show different hobby content. Dynamic component is used and ":is" is used to check which component should be displayed. There are 4 Vue components in 4 different files, and are imported to one js file. In the travelling part, when hovering the photo, it will show another one. When mouseout, it will go back to the previous one.
+3. On "Contact" page, Vue is used to create a drop-down list containing all the states name of USA. (Data is stored in a JSON file I created).
 
-Hi Josh,
-Here is my updated file for homework 2.
-This time for html, I add 2 subpages and delete several items from the hobby page, probably next time will add some back.
-For css, I would like to mention some highlights first. First of all, I downloaded 3 font family online and used them for the text decoration. Secondly, for Hometown page, I added an animation effect to the heading "Qingdao", and I also added a "back to top" button that when scroll down 100px from the web top, it will appear and stay at the bottom of the page. Next, for page "FurryFriends", I added an animation to images so that they can auto display. Here I encountered a problem and haven't solved yet. I wonder if you could give some advice. If the web page is opened in Safari, then the image transition is smooth and has a fading effect, but if I open it in Firefox, it doesn't have this effect. What's more, in page "Hobby", I added link to the button "Traveling" and "Photography" so that you can reach the subpages. In the traveling subpage, I added some effect to create a Polaroid look for the photo. In the photography subpage, I aligned the photos in 3 lines (please let me know if there is a better way to do this, I use 3 sections for 3 lines, so that first line can align at the bottom and last line can align at the top) and when hovering to the image, it will enlarge.
-For other things, I added some effect to the links, such as different colors before and after visit or hover on the link. Also for the media queries, when you shrink the window, the font size of the heading "Luyao's Sweet Home o_0" will become small and change color. The navigation bar will change to display in column and even change to a "hamburger icon" if the screen size is small enough. But it can not be pressed for now (after I learn JS, I should able to make it work). And the font size of "back to top" button will become small when screen shrinks and change to a arrow when the screen is small enough. Some headings' font-size will also change when screen size changes. The table is decorated.
+DOM is updated frequently in different pages. Some highlights can be:
+1. On "Furry Friends" page, depending on either playing the game or not, images will be inserted and displayed on the screen with text.
+2. On "Hobby" page, when pressing different tab-button, different component will be displayed on the page and DOME is updated.
+3. On "Experience" page, after clicking the button, the academic background table will be created and inserted into the page and update the DOM.
+4. On "Contact" page, after successfully submitted the form will be hidden and a thank you message will show up on the screen to update the DOM.
 
-I feel CSS is really difficult and time consuming. Basically it has too many things and I have to check almost every time when you need to use a new thing and still cannot remember it. 
-
-Thank you for the help!
+Extra credits:
+1. Flex, Grid, and Media Queries are used.
+2. External API is used to fetch data. (Dog picture API and data hosted in my glitch site.)
+3. ES6 functionality is used such as: arrow function, de-structuring, template literal, async await.
