@@ -270,7 +270,7 @@ mark {
 @media (max-width: 1000px) {
     #index_main {
         flex-wrap: wrap;
-        align-content: center;
+        align-content: flex-start;
         justify-content: center;
     }
 }
