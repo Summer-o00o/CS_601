@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luyao Wang">
-    <meta name="description" content="contact information">
+    <meta name="description" content="contact form">
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
     <script src="../jsfile/clock.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js" defer></script>
@@ -15,11 +15,39 @@
 
 <body>
     <div class="container">
-        <header id="header-menu" active-page="contact"></header>
-        <script type="module" src="../jsfile/vue-header.js" defer></script>
+        <header id="header-menu" active-page="contact">
+            <noscript>
+                <h1 id="home_head">
+                    Luyao's Sweet Home o_0
+                    <span id="clock"></span>
+                </h1>                    
+                <nav class="nav">
+                    <a class="home_nav" href="../Index/index.html">Home</a> 
+                    <a href="../Hometown/hometown.html">Hometown</a> 
+                    <a href="../FurryFriends/furryfriends.html">Furry Friends</a> 
+                    <a href="../Hobby/hobby.html">Hobby</a> 
+                    <a href="../Experience/experience.html">Experience</a> 
+                    <span>Contact</span>
+                </nav>
+            </noscript>
+        </header>
+        <script type="module" src="../jsfile/vue-header.js"></script>
 
         <main id="contact-main">
             <h2>Contact Me</h2>
+            <noscript>
+                <p>
+                    The contact form can not work without javascript!
+                </p>
+                <p>
+                    Please enable javascript or contact me via the email address below.
+                </p>
+                <address>
+                    <p>
+                        <b>Email:</b> <a href="mailto:summer880818@163.com">summer880818@163.com</a>
+                    </p>
+                </address> 
+            </noscript>
             <h3 id="success-message"></h3>
             <form name="CS601Form" id="contact-form">
                 <label for="firstName">
@@ -44,13 +72,13 @@
                     <p class="hideAlert" id="alert3">Invalid email format!</p>
                 </div>
                 
-                <label for="state">
+                <label for="state-name">
                     Which state do you live:
                 </label>
                 <div>
                     <select id="state-name" name="state">  
                     </select>
-                    <script type="module" src="../jsfile/vue-state.js" defer></script>
+                    <script type="module" src="../jsfile/vue-state.js"></script>
                 </div>
 
                 <fieldset id="radioFieldset">
@@ -85,7 +113,7 @@
                     Please leave a message:
                 </label>
                 <div class="input">
-                    <textarea id="message" row="10" cols="40" name="message"></textarea>
+                    <textarea id="message" rows="10" cols="40" name="message"></textarea>
                     <p class="hideAlert" id="alert4">At least 5 characters!</p>
                 </div>
                 <div id="submit-container">

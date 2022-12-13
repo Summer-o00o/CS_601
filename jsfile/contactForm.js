@@ -34,7 +34,7 @@ let messageValid = (input, warning) => {
     input.classList.toggle('borderAlert', false);
     warning.classList.toggle('hideAlert', true);
     let noError = true;
-    if (!(inputValue.length >= 5)) {
+    if (inputValue.length < 5) {
         input.classList.add('borderAlert', true);
         warning.classList.toggle('hideAlert', false);
         noError = false;

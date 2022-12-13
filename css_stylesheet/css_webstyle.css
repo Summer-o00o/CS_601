@@ -3,6 +3,11 @@
     /*border-style: solid;*/
     border-color: darkgray;
 }
+noscript p {
+    text-align: center;
+    color: firebrick;
+    font-weight: bold;
+}
 hr {
     border: 0;
     width: 96%;     
@@ -119,20 +124,7 @@ nav>a {
     min-width: 400px;
 }
 
-/*#narrow-nav div {
-    width: 1.5rem;
-    height: 0.15rem;
-    background-color: grey;
-    margin: 0.15rem 0;
-}
 
-#narrow-nav {
-    display: none;
-    flex-direction: column;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-}
-*/
 #clock {
     width: fit-content;
     font-family: "Bradley Hand", sans-serif;
@@ -450,7 +442,7 @@ iframe {
 #qingdao-youtuber {
     box-shadow: 1px 5px 8px lightgray;
     background-color: rgba(255, 250, 240, 0.32);
-    border-left: 10px solid olive;
+    border-left: 10px solid rgba(121, 117, 117, 0.737);
     padding: 0.5rem 0.5rem 0.5rem 1rem
 }
 
@@ -521,6 +513,9 @@ iframe {
 #puss-article p {
     margin-left: 2rem;
     margin-left: 2rem;
+}
+#puss-article h3{
+    width: 100%;
 }
 #amber-article p{
     margin-left: 2rem;
@@ -649,8 +644,9 @@ iframe {
     display: none;
 }
 
-#amber-photo figcaption {
+#figcaption {
     margin-top: 0;
+    color: peru;
 }
 
 
@@ -707,7 +703,6 @@ iframe {
 
 
 #hobby-main-intro {
-    flex-wrap:wrap ;
     font-size: 2.5rem;
     padding: 2rem;
     padding-bottom: 1rem;
@@ -720,13 +715,16 @@ iframe {
     color:white;
 }
 
+.hobby-h2 {
+    margin: 1.5rem 4rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
 @media (max-width: 1000px) {
-    .hobby {
-        width: 7rem;
-        height: 7rem;
-        margin: 0.5rem;
-    }
 
+    #hobby-main-intro {
+        font-size: 2rem;
+    }
     .hobby a {
         margin:0;
         font-size: 0.8rem;
@@ -736,28 +734,36 @@ iframe {
         min-width: 250px;
         height: auto;
     }
-
-    .hobby h2 {
-        height: fit-content;
-        width: 15rem;
+    .hobby {
+        width: 7rem;
+        height: 7rem;
+    }
+    #vue-music h3 {
         font-size: 2rem;
-        background-color: darkgrey;
-        color: white;
+    }
+    .caption {
+        font-size: 0.8rem;
     }
 }
 
 @media (max-width: 650px) {
-    .hobby {
-        width: 5rem;
-        height: 5rem;
+    .hobby-h2{
+        font-size: 1.5rem;
     }
     .hobby a {
         margin:0;
         font-size: 0.6rem;
         color:white;
     }
+    .hobby {
+        width: 5rem;
+        height: 5rem;
+    }
     #hobby-main-intro {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .caption {
+        font-size: 0.7rem;
     }
 }
 a.active{
@@ -789,17 +795,6 @@ a.active{
 /* end of hobby page*/
 
 /*start of travel page*/
-/*#travel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}*/
-
-.hobby-h2 {
-    margin: 1.5rem 4rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-}
 
 #travel-photo-container {
     display: flex;
@@ -843,11 +838,6 @@ a.active{
     filter:none;
 }*/
 
-@media (max-width: 1000px) {
-    #travel h2 {
-        font-size: 1.5rem;
-    }
-}
 
 /*end of travel page*/
 
@@ -907,13 +897,6 @@ a.active{
     transition: all 0.5s ease-in-out;
 }
 
-@media (max-width: 1000px) {
-    #photographying h2 {
-        margin: 1.5rem 4rem;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-    }
-}
 
 /* end of hobby page*/
 /* start of music page*/
@@ -956,6 +939,9 @@ a.active{
     background-color: rgba(243, 237, 224, 0.283);
 }
 
+.music-intro p:hover {
+    color:rgb(234, 113, 72);
+}
 /* start of experience page*/
 
 #experience {
@@ -1166,13 +1152,15 @@ fieldset{
 }
 textarea {
     font-size: 1rem;
-    height: 10rem;
+    height: 8rem;
+    width: 50%;
+    min-width: 200px;
 }
 #message {
     margin-top: 0;
 }
 #submit-container {
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1196,7 +1184,9 @@ textarea {
     display: none;
     margin-left: 3rem;
 }
-
+address p {
+    color:rgb(103, 144, 103);
+}
 @media (max-width: 1000px) {
     #alert1, #alert2, #alert3, #alert4,fieldset, .chooseheader {
         font-size: 0.9rem;

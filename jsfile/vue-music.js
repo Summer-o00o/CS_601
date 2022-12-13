@@ -1,7 +1,6 @@
 export default {
     data() {
         return {
-            display: "vue-hobby-music",
             music_intro: "I started to learn piano when I was about 6 years old. I guess because of that, I have been in love with music for so many years. Even though I stopped learning it long time ago, every time I heard some good songs or music, I download the scores and try to play them with piano. Beside, I also like pop music, rap music, light music and so on.",
             music_type: [
                 {

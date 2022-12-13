@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Luyao Wang">
         <meta name="description" 
-        content="personal profolio site, including self-introduction, information
-        of my hometown, hobbies, pets, previous experience and contact information">
+        content="An introduction of me">
         <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
         <script src="../jsfile/clock.js" defer></script>
         <script src="../jsfile/welcomeMessage.js" defer></script>
@@ -16,13 +15,28 @@
 
     <body>
         <div class="container">
-            <header id="header-menu" active-page="home"></header>
-            <script type="module" src="../jsfile/vue-header.js" defer></script>             
+            <header id="header-menu" active-page="home">
+                <noscript>
+                <h1 id="home_head">
+                    Luyao's Sweet Home o_0
+                    <span id="clock"></span>
+                </h1>
+                    <nav class="nav">
+                        <span class="home_nav">Home</span> 
+                        <a href="../Hometown/hometown.html">Hometown</a> 
+                        <a href="../FurryFriends/furryfriends.html">Furry Friends</a> 
+                        <a href="../Hobby/hobby.html">Hobby</a> 
+                        <a href="../Experience/experience.html">Experience</a> 
+                        <a href="../Contact/contact.html">Contact</a>
+                    </nav>
+                </noscript>
+            </header>
+            <script type="module" src="../jsfile/vue-header.js"></script>             
 
             <main id="index_main">
-                <img id="portrait" src="Index/image/portrait_7_500x341.jpg" alt="welcome" width="384" height="341">
+                <img id="portrait" src="Index/image/portrait_7_500x341.jpg" alt="my photo" width="384" height="341">
                 <article id="index_article">
-                    <h2 class="welcome" id="welcome"></h2>
+                    <h2 class="welcome" id="welcome">Hello!</h2>
                     <h2 class="welcome">Welcome To Luyao's Space!</h2>
                     <p>
                         Hi there, from here you will get to know a girl named Luyao Wang who is

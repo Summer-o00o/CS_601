@@ -1,7 +1,6 @@
 export default {
     data() {
         return {
-            display: "vue-hobby-photography",
             photography_intro: "Photography helps me to record and remember importment moments or those beutiful sceneries during travelling or in the life.",
             photography_1: [
                 {

@@ -17,7 +17,7 @@ const header = {
     /*html*/
     template: `
     <h1 id="home_head">{{headName}}
-    <div id="clock"></div>
+    <span id="clock"></span>
     </h1>
     <nav class="nav">
         <a v-bind:href = "Home" v-if="activePage != 'home'" >Home</a>

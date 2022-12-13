@@ -10,7 +10,6 @@ const findDog = async () => {
     let data = await response.json();
     let {message} = data;
     let correctPhotoPosition = getRandomPosition();
-    console.log(correctPhotoPosition);
     let correctPhoto = document.getElementById(correctPhotoPosition);
     correctPhoto.setAttribute("src", "./image/Amber_400x300.jpg" );
     let otherPhoto;
@@ -38,17 +37,17 @@ const findDog = async () => {
 
     const ifCorrect = (element) => {
         let ID = element.getAttribute("id");
+        let wrongMessage = document.getElementById("wrong");
         if (ID != correctPhotoPosition) {
-            alert("This is not Amber, please guess again!");
             element.style.display = "none";
+            alert("This is not Amber, please guess again!");
         } else {
             photoList.forEach(eachPhoto => {
                 if (eachPhoto.getAttribute("id") != correctPhotoPosition) {
                     eachPhoto.style.display = "none";
                 }
             }); 
-            alert("Yes this is Amber!");
-            figcaption.innerText = "This is Amber!";
+            figcaption.innerText = "Correct! This is Amber!";
             document.getElementById('cute-Amber').classList.toggle('hide', false);
             instruction.classList.toggle('hide', true);
         }
@@ -61,13 +60,13 @@ const findDog = async () => {
         ifCorrect(photo1);
     });
     photo2.addEventListener("click", function() {
-        ifCorrect(photo2)
+        ifCorrect(photo2);
     });
     photo3.addEventListener("click", function() {
-        ifCorrect(photo3)
+        ifCorrect(photo3);
     });
     photo4.addEventListener("click", function() {
-        ifCorrect(photo4)
+        ifCorrect(photo4);
     });
 };
 
@@ -76,7 +75,7 @@ const showAmber = () => {
     const photo2 = document.getElementById("2");
     const instruction = document.getElementById('game-instruction');
     photo1.setAttribute("src", "./image/Amber_400x300.jpg" );
-    photo2.setAttribute("src", "./image/Amber_2JPG_400x300.jpg")
+    photo2.setAttribute("src", "./image/Amber_2JPG_400x300.jpg");
     figcaption.innerText = "Amber tries to be cute!";
     photo1.classList.toggle('hide');
     photo2.classList.toggle('hide');
@@ -96,5 +95,5 @@ window.addEventListener("DOMContentLoaded", function(){
     noButton = document.getElementById('no-button');
     yesButton.addEventListener('click', findDog);
     noButton.addEventListener('click', showAmber);
-})
+});
 

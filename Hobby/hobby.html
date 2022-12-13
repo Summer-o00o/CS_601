@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luyao Wang">
     <meta name="description"
-        content="I like travelling, expecially hiking, camping, I also like playing piano, listenning to music, sometimes doing some handwork ">
+        content="introduction of my hobbies including travelling, photography and music">
     <link href="../css_stylesheet/css_webstyle.css" rel="stylesheet" type="text/css">
     <script src="../jsfile/clock.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.js" defer></script>
@@ -16,13 +16,33 @@
 
 <body>
     <div class="container">
-        <header id="header-menu" active-page="hobby"></header>
-        <script type="module" src="../jsfile/vue-header.js" defer></script>
+        <header id="header-menu" active-page="hobby">
+            <noscript>
+                <h1 id="home_head">
+                    Luyao's Sweet Home o_0
+                    <span id="clock"></span>
+                </h1>
+                    <nav class="nav">
+                        <a class="home_nav" href="../Index/index.html">Home</a>
+                        <a href="../Hometown/hometown.html">Hometown</a>
+                        <a href="../FurryFriends/furryfriends.html">Furry Friends</a>
+                        <span>Hobby</span>
+                        <a href="../Experience/experience.html">Experience</a>
+                        <a href="../Contact/contact.html">Contact</a>
+                    </nav>
+                </noscript>
+        </header>
+        <script type="module" src="../jsfile/vue-header.js"></script>
 
         <main id="hobby-main">
-            <div id="vue-hobby">
-            </div>
-            <script type="module" src="../jsfile/vue-hobby-main.js" defer></script>
+            <noscript>
+                <h2 id="hobby-main-intro">
+                    I love to do so many things. I love travelling to different places, enjoying differnet scenaries, cultures and food. Durding the trip, I like to take photos to record those unforgetable moments. I like to listen to music, singing songs and playing piano and many many ...
+                </h2>
+                <p>Please enable javascript to see more content for this page!</p>
+            </noscript>
+            <div id="vue-hobby"></div>
+            <script type="module" src="../jsfile/vue-hobby-main.js"></script>
         </main>
         <footer>
             <p>

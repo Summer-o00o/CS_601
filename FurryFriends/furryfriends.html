@@ -15,15 +15,31 @@
 
 <body>
     <div class="container">
-            <header id="header-menu" active-page="furryfriends"></header>
-            <script type="module" src="../jsfile/vue-header.js" defer></script>
+            <header id="header-menu" active-page="furryfriends">
+                <noscript>
+                    <h1 id="home_head">
+                        Luyao's Sweet Home o_0
+                        <span id="clock"></span>
+                    </h1>
+                        <nav class="nav">
+                            <a class="home_nav" href="../Index/index.html">Home</a>
+                            <a href="../Hometown/hometown.html">Hometown</a>
+                            <span>Furry Friends</span>
+                            <a href="../Hobby/hobby.html">Hobby</a>
+                            <a href="../Experience/experience.html">Experience</a>
+                            <a href="../Contact/contact.html">Contact</a>
+                        </nav>
+                    </noscript>
+            </header>
+            <script type="module" src="../jsfile/vue-header.js"></script>
         <main id="furryfriends">
             <h2>
                 My cutiest friends Puss and Amber <span>&#128151;</span>
             </h2>
 
-            <h3 class="titles">Puss</h3>
+           
             <article id="puss-article">
+                <h3 class="titles">Puss</h3>
                 <div id="puss-photo-container"></div>
 
                 <p class="puss-p">
@@ -34,7 +50,7 @@
                 </p>
                 <p class="puss-p">
                     When he was young, the vet highly suspecious him having <a
-                        href="https://en.wikipedia.org/wiki/Feline_infectious_peritonitis">Feline infectious
+                        href="https://en.wikipedia.org/wiki/Feline_infectious_peritonitis" target="_blank">Feline infectious
                         peritonitis</a>, which is a heartbreaking disease and usually strikes kittens and is almost
                     always fatal. Except in rare cases, wet <abbr title="Feline infectious peritonitis">FIP</abbr> is
                     fatal within about five weeks of diagnosis. The dry form is equally deadly but affected cats may
@@ -62,8 +78,6 @@
                     <p>Puss is playing chasing games</p>
                 </video>
             </div>
-
-
             <hr>
             <article id="amber-article">
                 <h3 class="titles">Amber</h3>
@@ -77,6 +91,9 @@
                     play and Puss always feels scared and wants to hide because of the difference in their sizes and
                     weight. To solve this issue, I even took an online class about training dogs.
                 </p>
+                <noscript>
+                    <p>Please enable javascript to play below game.</p>
+                </noscript>
                 <p id="if-game">
                     Want to play a game to find Amber?
                 </p>
@@ -88,17 +105,16 @@
                     Just click the photo to see if this is Amber.
                 </p>
                 <figure id="amber-photo">
-                    <img class="photoGuess hide" id="1" width="400" height="300" alt="a photo of dog">
-                    <img class="photoGuess hide" id="2" width="400" height="300" alt="a photo of dog">
-                    <img class="photoGuess hide" id="3" width="400" height="300" alt="a photo of dog">
-                    <img class="photoGuess hide" id="4" width="400" height="300" alt="a photo of dog">
+                    <img class="photoGuess hide" src="./image/puss-poster-649x368.jpg" id="1" width="400" height="300" alt="a photo of dog">
+                    <img class="photoGuess hide" src="./image/puss-poster-649x368.jpg" id="2" width="400" height="300" alt="a photo of dog">
+                    <img class="photoGuess hide" src="./image/puss-poster-649x368.jpg" id="3" width="400" height="300" alt="a photo of dog">
+                    <img class="photoGuess hide" src="./image/puss-poster-649x368.jpg" id="4" width="400" height="300" alt="a photo of dog">
                     <figcaption class="hide" id="figcaption">Who is Amber?</figcaption>
                 </figure>
 
                 <p id='cute-Amber' class="hide">
                     Is Amber cute? Does she look small? Don't be fooled by this photo since she is almost 50 pounds!
                     <span>&#128561;</span><br>
-
                 </p>
             </article>
 

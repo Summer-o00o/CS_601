@@ -1,7 +1,6 @@
 export default {
     data() {
         return {
-            display: "vue-hobby-travel",
             travel_intro: "Traveling around the world is always my dream! Although it's still far away from realization, when I look back to these days, I have already been to so many places!",
             travel: [
                 {
