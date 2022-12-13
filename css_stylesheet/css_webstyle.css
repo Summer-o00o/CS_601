@@ -150,6 +150,10 @@ nav span {
     color: lightcoral
 }
 
+mark {
+    background-color: white;
+    color:rgb(228, 169, 21);
+}
 @media (max-width: 1000px) {
 
     nav {
